@@ -1,0 +1,731 @@
+Analysis & Synthesis report for SquaredRoot
+Wed Nov 08 17:02:09 2023
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Logic Cells Representing Combinational Loops
+  9. General Register Statistics
+ 10. Parameter Settings for User Entity Instance: Datapath:D1|AU1_pipeline:AU1|ABS:abs
+ 11. Parameter Settings for User Entity Instance: Datapath:D1|AU1_pipeline:AU1|ABS:abs|Sub_5b:sub
+ 12. Parameter Settings for User Entity Instance: Datapath:D1|AU1_pipeline:AU1|MIN:min|Sub_5b:sub
+ 13. Parameter Settings for User Entity Instance: Datapath:D1|AU1_pipeline:AU1|MAX:max|Sub_5b:sub
+ 14. Parameter Settings for User Entity Instance: Datapath:D1|AU2_pipeline:AU2|Sub5b_select:sub
+ 15. Parameter Settings for User Entity Instance: Datapath:D1|AU2_pipeline:AU2|MAX:max|Sub_5b:sub
+ 16. Port Connectivity Checks: "Datapath:D1|AU2_pipeline:AU2|Sub5b_select:sub|Full_Adder_5b:fa0"
+ 17. Port Connectivity Checks: "Datapath:D1|AU2_pipeline:AU2|Full_Adder_5b_select:add|adder1:a4"
+ 18. Port Connectivity Checks: "Datapath:D1|AU2_pipeline:AU2|Full_Adder_5b_select:add|adder1:a0"
+ 19. Port Connectivity Checks: "Datapath:D1|AU2_pipeline:AU2|decode2_4:U1"
+ 20. Port Connectivity Checks: "Datapath:D1|AU1_pipeline:AU1|MAX:max|Sub_5b:sub"
+ 21. Port Connectivity Checks: "Datapath:D1|AU1_pipeline:AU1|MIN:min|Sub_5b:sub"
+ 22. Port Connectivity Checks: "Datapath:D1|AU1_pipeline:AU1|ABS:abs|Sub_5b:sub|Full_Adder_5b:fa0|adder1:a0"
+ 23. Port Connectivity Checks: "Datapath:D1|AU1_pipeline:AU1|ABS:abs|Sub_5b:sub|Full_Adder_5b:fa0"
+ 24. Port Connectivity Checks: "Datapath:D1|AU1_pipeline:AU1|ABS:abs|Sub_5b:sub"
+ 25. Port Connectivity Checks: "Datapath:D1|AU1_pipeline:AU1|decode2_4:U1"
+ 26. Elapsed Time Per Partition
+ 27. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Nov 08 17:02:09 2023           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; SquaredRoot                                     ;
+; Top-level Entity Name              ; Square_Root                                     ;
+; Family                             ; Cyclone II                                      ;
+; Total logic elements               ; 192                                             ;
+;     Total combinational functions  ; 192                                             ;
+;     Dedicated logic registers      ; 0                                               ;
+; Total registers                    ; 0                                               ;
+; Total pins                         ; 18                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP2C35F672C6       ;                    ;
+; Top-level entity name                                                      ; Square_Root        ; SquaredRoot        ;
+; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                               ;
++----------------------------------+-----------------+------------------------+----------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                 ; Library ;
++----------------------------------+-----------------+------------------------+----------------------------------------------+---------+
+; Datapath.v                       ; yes             ; User Verilog HDL File  ; D:/TKHDL/Squared_Root/Datapath.v             ;         ;
+; Control.v                        ; yes             ; User Verilog HDL File  ; D:/TKHDL/Squared_Root/Control.v              ;         ;
+; Control_Output.v                 ; yes             ; User Verilog HDL File  ; D:/TKHDL/Squared_Root/Control_Output.v       ;         ;
+; curr_state.v                     ; yes             ; User Verilog HDL File  ; D:/TKHDL/Squared_Root/curr_state.v           ;         ;
+; next_state.v                     ; yes             ; User Verilog HDL File  ; D:/TKHDL/Squared_Root/next_state.v           ;         ;
+; mux2_1b.v                        ; yes             ; User Verilog HDL File  ; D:/TKHDL/Squared_Root/mux2_1b.v              ;         ;
+; mux2_5b.v                        ; yes             ; User Verilog HDL File  ; D:/TKHDL/Squared_Root/mux2_5b.v              ;         ;
+; reg_5b_load_en.v                 ; yes             ; User Verilog HDL File  ; D:/TKHDL/Squared_Root/reg_5b_load_en.v       ;         ;
+; edge_dff.v                       ; yes             ; User Verilog HDL File  ; D:/TKHDL/Squared_Root/edge_dff.v             ;         ;
+; shift_right_1b.v                 ; yes             ; User Verilog HDL File  ; D:/TKHDL/Squared_Root/shift_right_1b.v       ;         ;
+; shift_right_3b.v                 ; yes             ; User Verilog HDL File  ; D:/TKHDL/Squared_Root/shift_right_3b.v       ;         ;
+; Sub_5b.v                         ; yes             ; User Verilog HDL File  ; D:/TKHDL/Squared_Root/Sub_5b.v               ;         ;
+; AU1_pipeline.v                   ; yes             ; User Verilog HDL File  ; D:/TKHDL/Squared_Root/AU1_pipeline.v         ;         ;
+; adder1.v                         ; yes             ; User Verilog HDL File  ; D:/TKHDL/Squared_Root/adder1.v               ;         ;
+; Full_Adder_5b.v                  ; yes             ; User Verilog HDL File  ; D:/TKHDL/Squared_Root/Full_Adder_5b.v        ;         ;
+; AU2_pipeline.v                   ; yes             ; User Verilog HDL File  ; D:/TKHDL/Squared_Root/AU2_pipeline.v         ;         ;
+; ABS.v                            ; yes             ; User Verilog HDL File  ; D:/TKHDL/Squared_Root/ABS.v                  ;         ;
+; MIN.v                            ; yes             ; User Verilog HDL File  ; D:/TKHDL/Squared_Root/MIN.v                  ;         ;
+; MAX.v                            ; yes             ; User Verilog HDL File  ; D:/TKHDL/Squared_Root/MAX.v                  ;         ;
+; Sub5b_select.v                   ; yes             ; User Verilog HDL File  ; D:/TKHDL/Squared_Root/Sub5b_select.v         ;         ;
+; Full_Adder_5b_select.v           ; yes             ; User Verilog HDL File  ; D:/TKHDL/Squared_Root/Full_Adder_5b_select.v ;         ;
+; decode2_4.v                      ; yes             ; User Verilog HDL File  ; D:/TKHDL/Squared_Root/decode2_4.v            ;         ;
+; BUF5bit.v                        ; yes             ; User Verilog HDL File  ; D:/TKHDL/Squared_Root/BUF5bit.v              ;         ;
+; Square_Root.v                    ; yes             ; User Verilog HDL File  ; D:/TKHDL/Squared_Root/Square_Root.v          ;         ;
++----------------------------------+-----------------+------------------------+----------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 192   ;
+;                                             ;       ;
+; Total combinational functions               ; 192   ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 169   ;
+;     -- 3 input functions                    ; 18    ;
+;     -- <=2 input functions                  ; 5     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 192   ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 18    ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; clk   ;
+; Maximum fan-out                             ; 71    ;
+; Total fan-out                               ; 750   ;
+; Average fan-out                             ; 3.57  ;
++---------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                       ;
++-------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node          ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                      ; Library Name ;
++-------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------+--------------+
+; |Square_Root                        ; 192 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 18   ; 0            ; |Square_Root                                                                             ; work         ;
+;    |Control:C1|                     ; 23 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Control:C1                                                                  ; work         ;
+;       |Control_Output:CO|           ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Control:C1|Control_Output:CO                                                ; work         ;
+;       |curr_state:cs|               ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Control:C1|curr_state:cs                                                    ; work         ;
+;          |edge_dff:dff0|            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Control:C1|curr_state:cs|edge_dff:dff0                                      ; work         ;
+;          |edge_dff:dff1|            ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Control:C1|curr_state:cs|edge_dff:dff1                                      ; work         ;
+;          |edge_dff:dff2|            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Control:C1|curr_state:cs|edge_dff:dff2                                      ; work         ;
+;          |edge_dff:dff3|            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Control:C1|curr_state:cs|edge_dff:dff3                                      ; work         ;
+;       |next_state:ns|               ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Control:C1|next_state:ns                                                    ; work         ;
+;    |Datapath:D1|                    ; 169 (5)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1                                                                 ; work         ;
+;       |AU1_pipeline:AU1|            ; 30 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|AU1_pipeline:AU1                                                ; work         ;
+;          |ABS:abs|                  ; 14 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|AU1_pipeline:AU1|ABS:abs                                        ; work         ;
+;             |Sub_5b:sub|            ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|AU1_pipeline:AU1|ABS:abs|Sub_5b:sub                             ; work         ;
+;                |Full_Adder_5b:fa0|  ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|AU1_pipeline:AU1|ABS:abs|Sub_5b:sub|Full_Adder_5b:fa0           ; work         ;
+;                   |adder1:a2|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|AU1_pipeline:AU1|ABS:abs|Sub_5b:sub|Full_Adder_5b:fa0|adder1:a2 ; work         ;
+;          |MAX:max|                  ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|AU1_pipeline:AU1|MAX:max                                        ; work         ;
+;          |MIN:min|                  ; 8 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|AU1_pipeline:AU1|MIN:min                                        ; work         ;
+;             |Sub_5b:sub|            ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|AU1_pipeline:AU1|MIN:min|Sub_5b:sub                             ; work         ;
+;                |Full_Adder_5b:fa1|  ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|AU1_pipeline:AU1|MIN:min|Sub_5b:sub|Full_Adder_5b:fa1           ; work         ;
+;                   |adder1:a4|       ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|AU1_pipeline:AU1|MIN:min|Sub_5b:sub|Full_Adder_5b:fa1|adder1:a4 ; work         ;
+;          |decode2_4:U1|             ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|AU1_pipeline:AU1|decode2_4:U1                                   ; work         ;
+;       |AU2_pipeline:AU2|            ; 19 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|AU2_pipeline:AU2                                                ; work         ;
+;          |Full_Adder_5b_select:add| ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|AU2_pipeline:AU2|Full_Adder_5b_select:add                       ; work         ;
+;             |adder1:a1|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|AU2_pipeline:AU2|Full_Adder_5b_select:add|adder1:a1             ; work         ;
+;             |adder1:a2|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|AU2_pipeline:AU2|Full_Adder_5b_select:add|adder1:a2             ; work         ;
+;             |adder1:a4|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|AU2_pipeline:AU2|Full_Adder_5b_select:add|adder1:a4             ; work         ;
+;          |MAX:max|                  ; 11 (2)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|AU2_pipeline:AU2|MAX:max                                        ; work         ;
+;             |Sub_5b:sub|            ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|AU2_pipeline:AU2|MAX:max|Sub_5b:sub                             ; work         ;
+;                |Full_Adder_5b:fa0|  ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|AU2_pipeline:AU2|MAX:max|Sub_5b:sub|Full_Adder_5b:fa0           ; work         ;
+;                   |adder1:a1|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|AU2_pipeline:AU2|MAX:max|Sub_5b:sub|Full_Adder_5b:fa0|adder1:a1 ; work         ;
+;                   |adder1:a2|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|AU2_pipeline:AU2|MAX:max|Sub_5b:sub|Full_Adder_5b:fa0|adder1:a2 ; work         ;
+;                   |adder1:a3|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|AU2_pipeline:AU2|MAX:max|Sub_5b:sub|Full_Adder_5b:fa0|adder1:a3 ; work         ;
+;                |Full_Adder_5b:fa1|  ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|AU2_pipeline:AU2|MAX:max|Sub_5b:sub|Full_Adder_5b:fa1           ; work         ;
+;                   |adder1:a1|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|AU2_pipeline:AU2|MAX:max|Sub_5b:sub|Full_Adder_5b:fa1|adder1:a1 ; work         ;
+;                   |adder1:a2|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|AU2_pipeline:AU2|MAX:max|Sub_5b:sub|Full_Adder_5b:fa1|adder1:a2 ; work         ;
+;                   |adder1:a3|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|AU2_pipeline:AU2|MAX:max|Sub_5b:sub|Full_Adder_5b:fa1|adder1:a3 ; work         ;
+;                   |adder1:a4|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|AU2_pipeline:AU2|MAX:max|Sub_5b:sub|Full_Adder_5b:fa1|adder1:a4 ; work         ;
+;             |mux2_5b:mux|           ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|AU2_pipeline:AU2|MAX:max|mux2_5b:mux                            ; work         ;
+;                |mux2_1b:mux1|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|AU2_pipeline:AU2|MAX:max|mux2_5b:mux|mux2_1b:mux1               ; work         ;
+;          |Sub5b_select:sub|         ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|AU2_pipeline:AU2|Sub5b_select:sub                               ; work         ;
+;             |Full_Adder_5b:fa1|     ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|AU2_pipeline:AU2|Sub5b_select:sub|Full_Adder_5b:fa1             ; work         ;
+;                |adder1:a1|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|AU2_pipeline:AU2|Sub5b_select:sub|Full_Adder_5b:fa1|adder1:a1   ; work         ;
+;                |adder1:a3|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|AU2_pipeline:AU2|Sub5b_select:sub|Full_Adder_5b:fa1|adder1:a3   ; work         ;
+;          |decode2_4:U1|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|AU2_pipeline:AU2|decode2_4:U1                                   ; work         ;
+;       |BUF5bit:b11|                 ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|BUF5bit:b11                                                     ; work         ;
+;       |reg_5b_load_en:R1|           ; 25 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R1                                               ; work         ;
+;          |edge_dff:dff0|            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R1|edge_dff:dff0                                 ; work         ;
+;          |edge_dff:dff1|            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R1|edge_dff:dff1                                 ; work         ;
+;          |edge_dff:dff2|            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R1|edge_dff:dff2                                 ; work         ;
+;          |edge_dff:dff3|            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R1|edge_dff:dff3                                 ; work         ;
+;          |edge_dff:dff4|            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R1|edge_dff:dff4                                 ; work         ;
+;          |mux2_5b:mux1|             ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R1|mux2_5b:mux1                                  ; work         ;
+;             |mux2_1b:mux0|          ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R1|mux2_5b:mux1|mux2_1b:mux0                     ; work         ;
+;             |mux2_1b:mux1|          ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R1|mux2_5b:mux1|mux2_1b:mux1                     ; work         ;
+;             |mux2_1b:mux2|          ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R1|mux2_5b:mux1|mux2_1b:mux2                     ; work         ;
+;             |mux2_1b:mux3|          ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R1|mux2_5b:mux1|mux2_1b:mux3                     ; work         ;
+;             |mux2_1b:mux4|          ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R1|mux2_5b:mux1|mux2_1b:mux4                     ; work         ;
+;       |reg_5b_load_en:R2|           ; 25 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R2                                               ; work         ;
+;          |edge_dff:dff0|            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R2|edge_dff:dff0                                 ; work         ;
+;          |edge_dff:dff1|            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R2|edge_dff:dff1                                 ; work         ;
+;          |edge_dff:dff2|            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R2|edge_dff:dff2                                 ; work         ;
+;          |edge_dff:dff3|            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R2|edge_dff:dff3                                 ; work         ;
+;          |edge_dff:dff4|            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R2|edge_dff:dff4                                 ; work         ;
+;          |mux2_5b:mux1|             ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R2|mux2_5b:mux1                                  ; work         ;
+;             |mux2_1b:mux0|          ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R2|mux2_5b:mux1|mux2_1b:mux0                     ; work         ;
+;             |mux2_1b:mux1|          ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R2|mux2_5b:mux1|mux2_1b:mux1                     ; work         ;
+;             |mux2_1b:mux2|          ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R2|mux2_5b:mux1|mux2_1b:mux2                     ; work         ;
+;             |mux2_1b:mux3|          ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R2|mux2_5b:mux1|mux2_1b:mux3                     ; work         ;
+;             |mux2_1b:mux4|          ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R2|mux2_5b:mux1|mux2_1b:mux4                     ; work         ;
+;       |reg_5b_load_en:R3|           ; 33 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R3                                               ; work         ;
+;          |edge_dff:dff0|            ; 10 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R3|edge_dff:dff0                                 ; work         ;
+;          |edge_dff:dff1|            ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R3|edge_dff:dff1                                 ; work         ;
+;          |edge_dff:dff2|            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R3|edge_dff:dff2                                 ; work         ;
+;          |edge_dff:dff3|            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R3|edge_dff:dff3                                 ; work         ;
+;          |edge_dff:dff4|            ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R3|edge_dff:dff4                                 ; work         ;
+;          |mux2_5b:mux1|             ; 13 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R3|mux2_5b:mux1                                  ; work         ;
+;             |mux2_1b:mux1|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R3|mux2_5b:mux1|mux2_1b:mux1                     ; work         ;
+;             |mux2_1b:mux2|          ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R3|mux2_5b:mux1|mux2_1b:mux2                     ; work         ;
+;             |mux2_1b:mux3|          ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R3|mux2_5b:mux1|mux2_1b:mux3                     ; work         ;
+;             |mux2_1b:mux4|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R3|mux2_5b:mux1|mux2_1b:mux4                     ; work         ;
+;       |reg_5b_load_en:R4|           ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R4                                               ; work         ;
+;          |edge_dff:dff0|            ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R4|edge_dff:dff0                                 ; work         ;
+;          |edge_dff:dff1|            ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R4|edge_dff:dff1                                 ; work         ;
+;          |edge_dff:dff2|            ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R4|edge_dff:dff2                                 ; work         ;
+;          |edge_dff:dff3|            ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R4|edge_dff:dff3                                 ; work         ;
+;          |edge_dff:dff4|            ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R4|edge_dff:dff4                                 ; work         ;
+;       |reg_5b_load_en:R5|           ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R5                                               ; work         ;
+;          |edge_dff:dff0|            ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R5|edge_dff:dff0                                 ; work         ;
+;          |edge_dff:dff1|            ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R5|edge_dff:dff1                                 ; work         ;
+;          |edge_dff:dff2|            ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R5|edge_dff:dff2                                 ; work         ;
+;          |edge_dff:dff3|            ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R5|edge_dff:dff3                                 ; work         ;
+;          |edge_dff:dff4|            ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Square_Root|Datapath:D1|reg_5b_load_en:R5|edge_dff:dff4                                 ; work         ;
++-------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------+
+; Logic Cells Representing Combinational Loops                ;
++--------------------------------------------------------+----+
+; Logic Cell Name                                        ;    ;
++--------------------------------------------------------+----+
+; Datapath:D1|reg_5b_load_en:R3|edge_dff:dff0|q~0        ;    ;
+; Control:C1|curr_state:cs|edge_dff:dff0|q~0             ;    ;
+; Control:C1|curr_state:cs|edge_dff:dff1|q~0             ;    ;
+; Control:C1|curr_state:cs|edge_dff:dff3|q~0             ;    ;
+; Control:C1|curr_state:cs|edge_dff:dff2|q~0             ;    ;
+; Datapath:D1|reg_5b_load_en:R3|edge_dff:dff1|q~0        ;    ;
+; Datapath:D1|reg_5b_load_en:R3|edge_dff:dff2|q~0        ;    ;
+; Datapath:D1|reg_5b_load_en:R3|edge_dff:dff3|q~0        ;    ;
+; Datapath:D1|reg_5b_load_en:R3|edge_dff:dff4|q~0        ;    ;
+; Datapath:D1|reg_5b_load_en:R3|edge_dff:dff0|na3~0      ;    ;
+; Control:C1|curr_state:cs|edge_dff:dff0|na3~0           ;    ;
+; Control:C1|curr_state:cs|edge_dff:dff1|na3~0           ;    ;
+; Control:C1|curr_state:cs|edge_dff:dff3|na3~0           ;    ;
+; Control:C1|curr_state:cs|edge_dff:dff2|na3~0           ;    ;
+; Datapath:D1|reg_5b_load_en:R3|edge_dff:dff1|na3~0      ;    ;
+; Datapath:D1|reg_5b_load_en:R3|edge_dff:dff2|na3~0      ;    ;
+; Datapath:D1|reg_5b_load_en:R3|edge_dff:dff3|na3~0      ;    ;
+; Datapath:D1|reg_5b_load_en:R3|edge_dff:dff4|na3~0      ;    ;
+; Datapath:D1|reg_5b_load_en:R1|edge_dff:dff2|q~0        ;    ;
+; Datapath:D1|reg_5b_load_en:R1|edge_dff:dff1|q~0        ;    ;
+; Datapath:D1|reg_5b_load_en:R1|edge_dff:dff0|q~0        ;    ;
+; Datapath:D1|reg_5b_load_en:R1|edge_dff:dff4|q~0        ;    ;
+; Datapath:D1|reg_5b_load_en:R2|edge_dff:dff2|q~0        ;    ;
+; Datapath:D1|reg_5b_load_en:R2|edge_dff:dff4|q~0        ;    ;
+; Datapath:D1|reg_5b_load_en:R2|edge_dff:dff3|q~0        ;    ;
+; Datapath:D1|reg_5b_load_en:R2|edge_dff:dff1|q~0        ;    ;
+; Datapath:D1|reg_5b_load_en:R2|edge_dff:dff0|q~0        ;    ;
+; Datapath:D1|reg_5b_load_en:R1|edge_dff:dff3|q~0        ;    ;
+; Datapath:D1|reg_5b_load_en:R4|edge_dff:dff0|q~0        ;    ;
+; Datapath:D1|reg_5b_load_en:R5|edge_dff:dff0|q~0        ;    ;
+; Datapath:D1|reg_5b_load_en:R4|edge_dff:dff1|q~0        ;    ;
+; Datapath:D1|reg_5b_load_en:R5|edge_dff:dff1|q~0        ;    ;
+; Datapath:D1|reg_5b_load_en:R4|edge_dff:dff2|q~0        ;    ;
+; Datapath:D1|reg_5b_load_en:R5|edge_dff:dff2|q~0        ;    ;
+; Datapath:D1|reg_5b_load_en:R4|edge_dff:dff3|q~0        ;    ;
+; Datapath:D1|reg_5b_load_en:R5|edge_dff:dff3|q~0        ;    ;
+; Datapath:D1|reg_5b_load_en:R4|edge_dff:dff4|q~0        ;    ;
+; Datapath:D1|reg_5b_load_en:R5|edge_dff:dff4|q~0        ;    ;
+; Datapath:D1|reg_5b_load_en:R1|edge_dff:dff2|na3~0      ;    ;
+; Datapath:D1|reg_5b_load_en:R1|edge_dff:dff1|na3~0      ;    ;
+; Datapath:D1|reg_5b_load_en:R1|edge_dff:dff0|na3~0      ;    ;
+; Datapath:D1|reg_5b_load_en:R1|edge_dff:dff4|na3~0      ;    ;
+; Datapath:D1|reg_5b_load_en:R2|edge_dff:dff2|na3~0      ;    ;
+; Datapath:D1|reg_5b_load_en:R2|edge_dff:dff4|na3~0      ;    ;
+; Datapath:D1|reg_5b_load_en:R2|edge_dff:dff3|na3~0      ;    ;
+; Datapath:D1|reg_5b_load_en:R2|edge_dff:dff1|na3~0      ;    ;
+; Datapath:D1|reg_5b_load_en:R2|edge_dff:dff0|na3~0      ;    ;
+; Datapath:D1|reg_5b_load_en:R1|edge_dff:dff3|na3~0      ;    ;
+; Datapath:D1|reg_5b_load_en:R4|edge_dff:dff0|na3~0      ;    ;
+; Datapath:D1|reg_5b_load_en:R5|edge_dff:dff0|na3~0      ;    ;
+; Datapath:D1|reg_5b_load_en:R4|edge_dff:dff1|na3~0      ;    ;
+; Datapath:D1|reg_5b_load_en:R5|edge_dff:dff1|na3~0      ;    ;
+; Datapath:D1|reg_5b_load_en:R4|edge_dff:dff2|na3~0      ;    ;
+; Datapath:D1|reg_5b_load_en:R5|edge_dff:dff2|na3~0      ;    ;
+; Datapath:D1|reg_5b_load_en:R4|edge_dff:dff3|na3~0      ;    ;
+; Datapath:D1|reg_5b_load_en:R5|edge_dff:dff3|na3~0      ;    ;
+; Datapath:D1|reg_5b_load_en:R4|edge_dff:dff4|na3~0      ;    ;
+; Datapath:D1|reg_5b_load_en:R5|edge_dff:dff4|na3~0      ;    ;
+; Number of logic cells representing combinational loops ; 58 ;
++--------------------------------------------------------+----+
+Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Datapath:D1|AU1_pipeline:AU1|ABS:abs ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; z              ; 00000 ; Unsigned Binary                                          ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Datapath:D1|AU1_pipeline:AU1|ABS:abs|Sub_5b:sub ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; t              ; 00001 ; Unsigned Binary                                                     ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Datapath:D1|AU1_pipeline:AU1|MIN:min|Sub_5b:sub ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; t              ; 00001 ; Unsigned Binary                                                     ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Datapath:D1|AU1_pipeline:AU1|MAX:max|Sub_5b:sub ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; t              ; 00001 ; Unsigned Binary                                                     ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Datapath:D1|AU2_pipeline:AU2|Sub5b_select:sub ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; t              ; 00001 ; Unsigned Binary                                                   ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Datapath:D1|AU2_pipeline:AU2|MAX:max|Sub_5b:sub ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; t              ; 00001 ; Unsigned Binary                                                     ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Datapath:D1|AU2_pipeline:AU2|Sub5b_select:sub|Full_Adder_5b:fa0"                         ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; carry     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; inB[4..1] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; inB[0]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Datapath:D1|AU2_pipeline:AU2|Full_Adder_5b_select:add|adder1:a4"                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Datapath:D1|AU2_pipeline:AU2|Full_Adder_5b_select:add|adder1:a0" ;
++------+-------+----------+-------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                           ;
++------+-------+----------+-------------------------------------------------------------------+
+; cin  ; Input ; Info     ; Stuck at GND                                                      ;
++------+-------+----------+-------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Datapath:D1|AU2_pipeline:AU2|decode2_4:U1"                                          ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; y3   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Datapath:D1|AU1_pipeline:AU1|MAX:max|Sub_5b:sub"                                         ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; out[3..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Datapath:D1|AU1_pipeline:AU1|MIN:min|Sub_5b:sub"                                         ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; out[3..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Datapath:D1|AU1_pipeline:AU1|ABS:abs|Sub_5b:sub|Full_Adder_5b:fa0|adder1:a0" ;
++------+-------+----------+-------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                       ;
++------+-------+----------+-------------------------------------------------------------------------------+
+; cin  ; Input ; Info     ; Stuck at GND                                                                  ;
++------+-------+----------+-------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Datapath:D1|AU1_pipeline:AU1|ABS:abs|Sub_5b:sub|Full_Adder_5b:fa0"                       ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; carry     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; inB[4..1] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; inB[0]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "Datapath:D1|AU1_pipeline:AU1|ABS:abs|Sub_5b:sub" ;
++------+-------+----------+---------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                           ;
++------+-------+----------+---------------------------------------------------+
+; InA  ; Input ; Info     ; Stuck at GND                                      ;
++------+-------+----------+---------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Datapath:D1|AU1_pipeline:AU1|decode2_4:U1"                                          ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; y0   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Nov 08 17:02:06 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SquaredRoot -c SquaredRoot
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file datapath.v
+    Info (12023): Found entity 1: Datapath
+Info (12021): Found 1 design units, including 1 entities, in source file control.v
+    Info (12023): Found entity 1: Control
+Info (12021): Found 1 design units, including 1 entities, in source file control_output.v
+    Info (12023): Found entity 1: Control_Output
+Info (12021): Found 1 design units, including 1 entities, in source file curr_state.v
+    Info (12023): Found entity 1: curr_state
+Info (12021): Found 1 design units, including 1 entities, in source file next_state.v
+    Info (12023): Found entity 1: next_state
+Info (12021): Found 1 design units, including 1 entities, in source file mux2_1b.v
+    Info (12023): Found entity 1: mux2_1b
+Info (12021): Found 1 design units, including 1 entities, in source file mux2_5b.v
+    Info (12023): Found entity 1: mux2_5b
+Info (12021): Found 1 design units, including 1 entities, in source file r1_sel.v
+    Info (12023): Found entity 1: R1_sel
+Info (12021): Found 1 design units, including 1 entities, in source file reg_5b_load_en.v
+    Info (12023): Found entity 1: reg_5b_load_en
+Info (12021): Found 1 design units, including 1 entities, in source file edge_dff.v
+    Info (12023): Found entity 1: edge_dff
+Info (12021): Found 1 design units, including 1 entities, in source file shift_right_1b.v
+    Info (12023): Found entity 1: shift_right_1b
+Info (12021): Found 1 design units, including 1 entities, in source file shift_right_3b.v
+    Info (12023): Found entity 1: shift_right_3b
+Info (12021): Found 1 design units, including 1 entities, in source file reg_file_cell.v
+    Info (12023): Found entity 1: reg_file_cell
+Info (12021): Found 1 design units, including 1 entities, in source file register_5b.v
+    Info (12023): Found entity 1: Register_5b
+Info (12021): Found 1 design units, including 1 entities, in source file reg_delay_5b.v
+    Info (12023): Found entity 1: Reg_Delay_5b
+Info (12021): Found 1 design units, including 1 entities, in source file reg_delay_3b.v
+    Info (12023): Found entity 1: Reg_Delay_3b
+Info (12021): Found 1 design units, including 1 entities, in source file full_sub.v
+    Info (12023): Found entity 1: Full_Sub
+Info (12021): Found 1 design units, including 1 entities, in source file sub_5b.v
+    Info (12023): Found entity 1: Sub_5b
+Info (12021): Found 1 design units, including 1 entities, in source file and_bus.v
+    Info (12023): Found entity 1: and_bus
+Info (12021): Found 1 design units, including 1 entities, in source file au1_pipeline.v
+    Info (12023): Found entity 1: AU1_pipeline
+Info (12021): Found 1 design units, including 1 entities, in source file adder1.v
+    Info (12023): Found entity 1: adder1
+Info (12021): Found 1 design units, including 1 entities, in source file full_adder_5b.v
+    Info (12023): Found entity 1: Full_Adder_5b
+Info (12021): Found 1 design units, including 1 entities, in source file xor_mux.v
+    Info (12023): Found entity 1: xor_mux
+Info (12021): Found 1 design units, including 1 entities, in source file au2_pipeline.v
+    Info (12023): Found entity 1: AU2_pipeline
+Info (12021): Found 1 design units, including 1 entities, in source file abs.v
+    Info (12023): Found entity 1: ABS
+Info (12021): Found 1 design units, including 1 entities, in source file min.v
+    Info (12023): Found entity 1: MIN
+Info (12021): Found 1 design units, including 1 entities, in source file max.v
+    Info (12023): Found entity 1: MAX
+Info (12021): Found 1 design units, including 1 entities, in source file sub5b_select.v
+    Info (12023): Found entity 1: Sub5b_select
+Info (12021): Found 1 design units, including 1 entities, in source file full_adder_5b_select.v
+    Info (12023): Found entity 1: Full_Adder_5b_select
+Info (12021): Found 1 design units, including 1 entities, in source file decode2_4.v
+    Info (12023): Found entity 1: decode2_4
+Info (12021): Found 1 design units, including 1 entities, in source file buf5bit.v
+    Info (12023): Found entity 1: BUF5bit
+Info (12021): Found 1 design units, including 1 entities, in source file square_root.v
+    Info (12023): Found entity 1: Square_Root
+Info (12021): Found 1 design units, including 1 entities, in source file testbench.v
+    Info (12023): Found entity 1: Testbench
+Info (12127): Elaborating entity "Square_Root" for the top level hierarchy
+Info (12128): Elaborating entity "Control" for hierarchy "Control:C1"
+Info (12128): Elaborating entity "next_state" for hierarchy "Control:C1|next_state:ns"
+Info (12128): Elaborating entity "curr_state" for hierarchy "Control:C1|curr_state:cs"
+Info (12128): Elaborating entity "edge_dff" for hierarchy "Control:C1|curr_state:cs|edge_dff:dff3"
+Info (12128): Elaborating entity "Control_Output" for hierarchy "Control:C1|Control_Output:CO"
+Info (12128): Elaborating entity "Datapath" for hierarchy "Datapath:D1"
+Info (12128): Elaborating entity "reg_5b_load_en" for hierarchy "Datapath:D1|reg_5b_load_en:R1"
+Info (12128): Elaborating entity "mux2_5b" for hierarchy "Datapath:D1|reg_5b_load_en:R1|mux2_5b:mux1"
+Info (12128): Elaborating entity "mux2_1b" for hierarchy "Datapath:D1|reg_5b_load_en:R1|mux2_5b:mux1|mux2_1b:mux4"
+Info (12128): Elaborating entity "BUF5bit" for hierarchy "Datapath:D1|BUF5bit:b1"
+Info (12128): Elaborating entity "AU1_pipeline" for hierarchy "Datapath:D1|AU1_pipeline:AU1"
+Info (12128): Elaborating entity "decode2_4" for hierarchy "Datapath:D1|AU1_pipeline:AU1|decode2_4:U1"
+Info (12128): Elaborating entity "ABS" for hierarchy "Datapath:D1|AU1_pipeline:AU1|ABS:abs"
+Info (12128): Elaborating entity "Sub_5b" for hierarchy "Datapath:D1|AU1_pipeline:AU1|ABS:abs|Sub_5b:sub"
+Info (12128): Elaborating entity "Full_Adder_5b" for hierarchy "Datapath:D1|AU1_pipeline:AU1|ABS:abs|Sub_5b:sub|Full_Adder_5b:fa0"
+Info (12128): Elaborating entity "adder1" for hierarchy "Datapath:D1|AU1_pipeline:AU1|ABS:abs|Sub_5b:sub|Full_Adder_5b:fa0|adder1:a0"
+Info (12128): Elaborating entity "MIN" for hierarchy "Datapath:D1|AU1_pipeline:AU1|MIN:min"
+Info (12128): Elaborating entity "MAX" for hierarchy "Datapath:D1|AU1_pipeline:AU1|MAX:max"
+Info (12128): Elaborating entity "shift_right_1b" for hierarchy "Datapath:D1|shift_right_1b:SR1"
+Info (12128): Elaborating entity "shift_right_3b" for hierarchy "Datapath:D1|shift_right_3b:SR3"
+Info (12128): Elaborating entity "AU2_pipeline" for hierarchy "Datapath:D1|AU2_pipeline:AU2"
+Info (12128): Elaborating entity "Full_Adder_5b_select" for hierarchy "Datapath:D1|AU2_pipeline:AU2|Full_Adder_5b_select:add"
+Info (12128): Elaborating entity "Sub5b_select" for hierarchy "Datapath:D1|AU2_pipeline:AU2|Sub5b_select:sub"
+Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
+    Warning (13048): Converted tri-state node "Datapath:D1|InB[4]" into a selector
+    Warning (13048): Converted tri-state node "Datapath:D1|InB[3]" into a selector
+    Warning (13048): Converted tri-state node "Datapath:D1|InB[2]" into a selector
+    Warning (13048): Converted tri-state node "Datapath:D1|InB[1]" into a selector
+    Warning (13048): Converted tri-state node "Datapath:D1|InB[0]" into a selector
+    Warning (13048): Converted tri-state node "Datapath:D1|AU2_InA[4]" into a selector
+    Warning (13048): Converted tri-state node "Datapath:D1|AU2_InA[3]" into a selector
+    Warning (13048): Converted tri-state node "Datapath:D1|AU2_InA[2]" into a selector
+    Warning (13048): Converted tri-state node "Datapath:D1|AU2_InA[1]" into a selector
+    Warning (13048): Converted tri-state node "Datapath:D1|AU2_InA[0]" into a selector
+Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
+    Warning (13047): Converted the fan-out from the tri-state buffer "Datapath:D1|BUF5bit:b7|out[0]" to the node "Datapath:D1|reg_5b_load_en:R3|mux2_5b:mux1|mux2_1b:mux0|u3" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Datapath:D1|BUF5bit:b7|out[1]" to the node "Datapath:D1|reg_5b_load_en:R3|mux2_5b:mux1|mux2_1b:mux1|u3" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Datapath:D1|BUF5bit:b7|out[2]" to the node "Datapath:D1|reg_5b_load_en:R3|mux2_5b:mux1|mux2_1b:mux2|u3" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Datapath:D1|BUF5bit:b7|out[3]" to the node "Datapath:D1|reg_5b_load_en:R3|mux2_5b:mux1|mux2_1b:mux3|u3" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Datapath:D1|BUF5bit:b7|out[4]" to the node "Datapath:D1|reg_5b_load_en:R3|mux2_5b:mux1|mux2_1b:mux4|u3" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Datapath:D1|AU1_pipeline:AU1|ABS:abs|b2" to the node "Datapath:D1|reg_5b_load_en:R5|mux2_5b:mux1|mux2_1b:mux1|u3" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Datapath:D1|AU2_pipeline:AU2|Full_Adder_5b_select:add|b0" to the node "Datapath:D1|BUF5bit:b11|out[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Datapath:D1|AU1_pipeline:AU1|ABS:abs|b3" to the node "Datapath:D1|reg_5b_load_en:R5|mux2_5b:mux1|mux2_1b:mux2|u3" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Datapath:D1|AU2_pipeline:AU2|Full_Adder_5b_select:add|b1" to the node "Datapath:D1|BUF5bit:b11|out[1]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Datapath:D1|AU1_pipeline:AU1|ABS:abs|b4" to the node "Datapath:D1|reg_5b_load_en:R5|mux2_5b:mux1|mux2_1b:mux3|u3" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Datapath:D1|AU2_pipeline:AU2|Full_Adder_5b_select:add|b2" to the node "Datapath:D1|BUF5bit:b11|out[2]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Datapath:D1|AU2_pipeline:AU2|Full_Adder_5b_select:add|b3" to the node "Datapath:D1|BUF5bit:b11|out[3]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Datapath:D1|AU2_pipeline:AU2|Full_Adder_5b_select:add|b4" to the node "Datapath:D1|BUF5bit:b11|out[4]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Datapath:D1|BUF5bit:b3|out[2]" to the node "Datapath:D1|reg_5b_load_en:R1|mux2_5b:mux1|mux2_1b:mux2|u3" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Datapath:D1|BUF5bit:b3|out[1]" to the node "Datapath:D1|reg_5b_load_en:R1|mux2_5b:mux1|mux2_1b:mux1|u3" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Datapath:D1|BUF5bit:b3|out[0]" to the node "Datapath:D1|reg_5b_load_en:R1|mux2_5b:mux1|mux2_1b:mux0|u3" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Datapath:D1|BUF5bit:b3|out[4]" to the node "Datapath:D1|reg_5b_load_en:R1|mux2_5b:mux1|mux2_1b:mux4|u3" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Datapath:D1|BUF5bit:b5|out[2]" to the node "Datapath:D1|reg_5b_load_en:R2|mux2_5b:mux1|mux2_1b:mux2|u3" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Datapath:D1|BUF5bit:b5|out[4]" to the node "Datapath:D1|reg_5b_load_en:R2|mux2_5b:mux1|mux2_1b:mux4|u3" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Datapath:D1|BUF5bit:b5|out[3]" to the node "Datapath:D1|reg_5b_load_en:R2|mux2_5b:mux1|mux2_1b:mux3|u3" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Datapath:D1|BUF5bit:b5|out[1]" to the node "Datapath:D1|reg_5b_load_en:R2|mux2_5b:mux1|mux2_1b:mux1|u3" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Datapath:D1|BUF5bit:b5|out[0]" to the node "Datapath:D1|reg_5b_load_en:R2|mux2_5b:mux1|mux2_1b:mux0|u3" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Datapath:D1|BUF5bit:b3|out[3]" to the node "Datapath:D1|reg_5b_load_en:R1|mux2_5b:mux1|mux2_1b:mux3|u3" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Datapath:D1|AU1_pipeline:AU1|ABS:abs|b0" to the node "Datapath:D1|reg_5b_load_en:R4|mux2_5b:mux1|mux2_1b:mux0|u3" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Datapath:D1|AU1_pipeline:AU1|ABS:abs|b1" to the node "Datapath:D1|reg_5b_load_en:R5|mux2_5b:mux1|mux2_1b:mux0|u3" into an OR gate
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 210 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 13 input pins
+    Info (21059): Implemented 5 output pins
+    Info (21061): Implemented 192 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 38 warnings
+    Info: Peak virtual memory: 4612 megabytes
+    Info: Processing ended: Wed Nov 08 17:02:09 2023
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
+
+

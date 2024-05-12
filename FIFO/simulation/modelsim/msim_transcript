@@ -1,0 +1,85 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do FIFO_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/FIFO {D:/TKHDL/FIFO/FIFO.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/FIFO {D:/TKHDL/FIFO/MC.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module MC
+# 
+# Top level modules:
+# 	MC
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/FIFO {D:/TKHDL/FIFO/counter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module HA
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	counter
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/FIFO {D:/TKHDL/FIFO/RAM.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module decode2_4
+# -- Compiling module RAM
+# 
+# Top level modules:
+# 	RAM
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/FIFO {D:/TKHDL/FIFO/edge_dff.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_dff
+# 
+# Top level modules:
+# 	edge_dff
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/FIFO {D:/TKHDL/FIFO/mux2_to_1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux2_to_1
+# 
+# Top level modules:
+# 	mux2_to_1
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/FIFO {D:/TKHDL/FIFO/CMP.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CMP
+# 
+# Top level modules:
+# 	CMP
+# 
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/FIFO {D:/TKHDL/FIFO/Testbench.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Testbench
+# 
+# Top level modules:
+# 	Testbench
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  Testbench
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps Testbench 
+# Loading work.Testbench
+# Loading work.FIFO
+# Loading work.counter
+# Loading work.HA
+# Loading work.edge_dff
+# Loading work.CMP
+# Loading work.mux2_to_1
+# Loading work.RAM
+# Loading work.decode2_4
+# Loading work.MC
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Error: (vsim-3601) Iteration limit reached at time 40 ns.
+# 

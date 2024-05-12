@@ -1,0 +1,24 @@
+module AU2_pipeline(out, InA, InB, op, clk, OE, WS, RS);
+	output [4:0] out;
+	input [4:0] InA, InB;
+	input [1:0] op;
+	input clk, OE, WS, RS;
+	wire [4:0] w_xm, w_Sum, w_RD1, w_RD2, w_RD3, w_mux1, w_SigD;
+	wire w_sel1, w_sel2;
+	xor_mux xm(w_xm, InB, 1'b0);
+	Full_Adder_5b FA(w_Sum, , InA, InB);
+	Reg_Delay_5b RD1(w_RD1, w_Sum, clk, RS, WS, OE);
+	Reg_Delay_5b RD2(w_RD2, InA, clk, RS, WS, OE);
+	Reg_Delay_5b RD3(w_RD3, InB, clk, RS, WS, OE);
+	
+	wire [2:0]c_sig;
+	assign c_sig[1:0] = op[1:0];
+	assign c_sig[2] = 1'b0;
+	Reg_Delay_3b Sig_Delay(w_SigD, c_sig, clk, RS, WS, OE);
+	assign w_sel1 = w_SigD[1] & ~w_SigD[0] & w_RD1[4];
+	mux2_5b mux1(w_mux1, w_RD2, w_RD3, w_sel1);
+	or (w_sel2, w_SigD[0], ~w_SigD[1]);
+	mux2_5b mux2(out, w_mux1, w_RD1, w_sel2);
+endmodule
+	
+	

@@ -1,0 +1,399 @@
+Simulator report for FIFO
+Wed Nov 15 13:09:40 2023
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 234 nodes    ;
+; Simulation Coverage         ;      97.44 % ;
+; Total Number of Transitions ; 5379         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                       ;
++--------------------------------------------------------------------------------------------+-----------------------------+---------------+
+; Option                                                                                     ; Setting                     ; Default Value ;
++--------------------------------------------------------------------------------------------+-----------------------------+---------------+
+; Simulation mode                                                                            ; Functional                  ; Timing        ;
+; Start time                                                                                 ; 0 ns                        ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                         ;               ;
+; Vector input source                                                                        ; D:/TKHDL/FIFO/Waveform1.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                          ; On            ;
+; Check outputs                                                                              ; Off                         ; Off           ;
+; Report simulation coverage                                                                 ; On                          ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                          ; On            ;
+; Display missing 1-value coverage report                                                    ; On                          ; On            ;
+; Display missing 0-value coverage report                                                    ; On                          ; On            ;
+; Detect setup and hold time violations                                                      ; Off                         ; Off           ;
+; Detect glitches                                                                            ; Off                         ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                         ; Off           ;
+; Generate Signal Activity File                                                              ; Off                         ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                         ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                         ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                          ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                  ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                         ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                        ; Auto          ;
++--------------------------------------------------------------------------------------------+-----------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      97.44 % ;
+; Total nodes checked                                 ; 234          ;
+; Total output ports checked                          ; 234          ;
+; Total output ports with complete 1/0-value coverage ; 228          ;
+; Total output ports with no 1/0-value coverage       ; 3            ;
+; Total output ports with no 1-value coverage         ; 5            ;
+; Total output ports with no 0-value coverage         ; 4            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                      ;
++---------------------------------------+---------------------------------------+------------------+
+; Node Name                             ; Output Port Name                      ; Output Port Type ;
++---------------------------------------+---------------------------------------+------------------+
+; |FIFO|a0                              ; |FIFO|a0                              ; out0             ;
+; |FIFO|a1                              ; |FIFO|a1                              ; out0             ;
+; |FIFO|x0                              ; |FIFO|x0                              ; out0             ;
+; |FIFO|a2                              ; |FIFO|a2                              ; out0             ;
+; |FIFO|a3                              ; |FIFO|a3                              ; out0             ;
+; |FIFO|clk                             ; |FIFO|clk                             ; out              ;
+; |FIFO|RW                              ; |FIFO|RW                              ; out              ;
+; |FIFO|I[0]                            ; |FIFO|I[0]                            ; out              ;
+; |FIFO|I[1]                            ; |FIFO|I[1]                            ; out              ;
+; |FIFO|I[2]                            ; |FIFO|I[2]                            ; out              ;
+; |FIFO|I[3]                            ; |FIFO|I[3]                            ; out              ;
+; |FIFO|O[0]                            ; |FIFO|O[0]                            ; pin_out          ;
+; |FIFO|O[1]                            ; |FIFO|O[1]                            ; pin_out          ;
+; |FIFO|O[2]                            ; |FIFO|O[2]                            ; pin_out          ;
+; |FIFO|O[3]                            ; |FIFO|O[3]                            ; pin_out          ;
+; |FIFO|Empty                           ; |FIFO|Empty                           ; pin_out          ;
+; |FIFO|Full                            ; |FIFO|Full                            ; pin_out          ;
+; |FIFO|RAM:R|a4                        ; |FIFO|RAM:R|a4                        ; out0             ;
+; |FIFO|RAM:R|a5                        ; |FIFO|RAM:R|a5                        ; out0             ;
+; |FIFO|RAM:R|b0                        ; |FIFO|RAM:R|b0                        ; out              ;
+; |FIFO|RAM:R|b1                        ; |FIFO|RAM:R|b1                        ; out              ;
+; |FIFO|RAM:R|b2                        ; |FIFO|RAM:R|b2                        ; out              ;
+; |FIFO|RAM:R|b3                        ; |FIFO|RAM:R|b3                        ; out              ;
+; |FIFO|RAM:R|f[3]                      ; |FIFO|RAM:R|f[3]                      ; out0             ;
+; |FIFO|RAM:R|f[2]                      ; |FIFO|RAM:R|f[2]                      ; out0             ;
+; |FIFO|RAM:R|f[1]                      ; |FIFO|RAM:R|f[1]                      ; out0             ;
+; |FIFO|RAM:R|f[0]                      ; |FIFO|RAM:R|f[0]                      ; out0             ;
+; |FIFO|RAM:R|MC:M3|a0                  ; |FIFO|RAM:R|MC:M3|a0                  ; out0             ;
+; |FIFO|RAM:R|MC:M3|b0                  ; |FIFO|RAM:R|MC:M3|b0                  ; out              ;
+; |FIFO|RAM:R|MC:M3|b1                  ; |FIFO|RAM:R|MC:M3|b1                  ; out              ;
+; |FIFO|RAM:R|MC:M3|b2                  ; |FIFO|RAM:R|MC:M3|b2                  ; out              ;
+; |FIFO|RAM:R|MC:M3|b3                  ; |FIFO|RAM:R|MC:M3|b3                  ; out              ;
+; |FIFO|RAM:R|MC:M3|edge_dff:dff3|na0   ; |FIFO|RAM:R|MC:M3|edge_dff:dff3|na0   ; out0             ;
+; |FIFO|RAM:R|MC:M3|edge_dff:dff3|na1   ; |FIFO|RAM:R|MC:M3|edge_dff:dff3|na1   ; out0             ;
+; |FIFO|RAM:R|MC:M3|edge_dff:dff3|na2   ; |FIFO|RAM:R|MC:M3|edge_dff:dff3|na2   ; out0             ;
+; |FIFO|RAM:R|MC:M3|edge_dff:dff3|na3   ; |FIFO|RAM:R|MC:M3|edge_dff:dff3|na3   ; out0             ;
+; |FIFO|RAM:R|MC:M3|edge_dff:dff3|na4   ; |FIFO|RAM:R|MC:M3|edge_dff:dff3|na4   ; out0             ;
+; |FIFO|RAM:R|MC:M3|edge_dff:dff3|na5   ; |FIFO|RAM:R|MC:M3|edge_dff:dff3|na5   ; out0             ;
+; |FIFO|RAM:R|MC:M3|edge_dff:dff3|na6   ; |FIFO|RAM:R|MC:M3|edge_dff:dff3|na6   ; out0             ;
+; |FIFO|RAM:R|MC:M3|edge_dff:dff3|na7   ; |FIFO|RAM:R|MC:M3|edge_dff:dff3|na7   ; out0             ;
+; |FIFO|RAM:R|MC:M3|edge_dff:dff2|na0   ; |FIFO|RAM:R|MC:M3|edge_dff:dff2|na0   ; out0             ;
+; |FIFO|RAM:R|MC:M3|edge_dff:dff2|na1   ; |FIFO|RAM:R|MC:M3|edge_dff:dff2|na1   ; out0             ;
+; |FIFO|RAM:R|MC:M3|edge_dff:dff2|na2   ; |FIFO|RAM:R|MC:M3|edge_dff:dff2|na2   ; out0             ;
+; |FIFO|RAM:R|MC:M3|edge_dff:dff2|na3   ; |FIFO|RAM:R|MC:M3|edge_dff:dff2|na3   ; out0             ;
+; |FIFO|RAM:R|MC:M3|edge_dff:dff2|na4   ; |FIFO|RAM:R|MC:M3|edge_dff:dff2|na4   ; out0             ;
+; |FIFO|RAM:R|MC:M3|edge_dff:dff2|na5   ; |FIFO|RAM:R|MC:M3|edge_dff:dff2|na5   ; out0             ;
+; |FIFO|RAM:R|MC:M3|edge_dff:dff2|na6   ; |FIFO|RAM:R|MC:M3|edge_dff:dff2|na6   ; out0             ;
+; |FIFO|RAM:R|MC:M3|edge_dff:dff2|na7   ; |FIFO|RAM:R|MC:M3|edge_dff:dff2|na7   ; out0             ;
+; |FIFO|RAM:R|MC:M3|edge_dff:dff1|na0   ; |FIFO|RAM:R|MC:M3|edge_dff:dff1|na0   ; out0             ;
+; |FIFO|RAM:R|MC:M3|edge_dff:dff1|na1   ; |FIFO|RAM:R|MC:M3|edge_dff:dff1|na1   ; out0             ;
+; |FIFO|RAM:R|MC:M3|edge_dff:dff1|na2   ; |FIFO|RAM:R|MC:M3|edge_dff:dff1|na2   ; out0             ;
+; |FIFO|RAM:R|MC:M3|edge_dff:dff1|na3   ; |FIFO|RAM:R|MC:M3|edge_dff:dff1|na3   ; out0             ;
+; |FIFO|RAM:R|MC:M3|edge_dff:dff1|na4   ; |FIFO|RAM:R|MC:M3|edge_dff:dff1|na4   ; out0             ;
+; |FIFO|RAM:R|MC:M3|edge_dff:dff1|na5   ; |FIFO|RAM:R|MC:M3|edge_dff:dff1|na5   ; out0             ;
+; |FIFO|RAM:R|MC:M3|edge_dff:dff1|na6   ; |FIFO|RAM:R|MC:M3|edge_dff:dff1|na6   ; out0             ;
+; |FIFO|RAM:R|MC:M3|edge_dff:dff1|na7   ; |FIFO|RAM:R|MC:M3|edge_dff:dff1|na7   ; out0             ;
+; |FIFO|RAM:R|MC:M3|edge_dff:dff0|na0   ; |FIFO|RAM:R|MC:M3|edge_dff:dff0|na0   ; out0             ;
+; |FIFO|RAM:R|MC:M3|edge_dff:dff0|na1   ; |FIFO|RAM:R|MC:M3|edge_dff:dff0|na1   ; out0             ;
+; |FIFO|RAM:R|MC:M3|edge_dff:dff0|na2   ; |FIFO|RAM:R|MC:M3|edge_dff:dff0|na2   ; out0             ;
+; |FIFO|RAM:R|MC:M3|edge_dff:dff0|na3   ; |FIFO|RAM:R|MC:M3|edge_dff:dff0|na3   ; out0             ;
+; |FIFO|RAM:R|MC:M3|edge_dff:dff0|na4   ; |FIFO|RAM:R|MC:M3|edge_dff:dff0|na4   ; out0             ;
+; |FIFO|RAM:R|MC:M3|edge_dff:dff0|na5   ; |FIFO|RAM:R|MC:M3|edge_dff:dff0|na5   ; out0             ;
+; |FIFO|RAM:R|MC:M3|edge_dff:dff0|na6   ; |FIFO|RAM:R|MC:M3|edge_dff:dff0|na6   ; out0             ;
+; |FIFO|RAM:R|MC:M3|edge_dff:dff0|na7   ; |FIFO|RAM:R|MC:M3|edge_dff:dff0|na7   ; out0             ;
+; |FIFO|RAM:R|MC:M2|a0                  ; |FIFO|RAM:R|MC:M2|a0                  ; out0             ;
+; |FIFO|RAM:R|MC:M2|b0                  ; |FIFO|RAM:R|MC:M2|b0                  ; out              ;
+; |FIFO|RAM:R|MC:M2|b1                  ; |FIFO|RAM:R|MC:M2|b1                  ; out              ;
+; |FIFO|RAM:R|MC:M2|b2                  ; |FIFO|RAM:R|MC:M2|b2                  ; out              ;
+; |FIFO|RAM:R|MC:M2|b3                  ; |FIFO|RAM:R|MC:M2|b3                  ; out              ;
+; |FIFO|RAM:R|MC:M2|edge_dff:dff3|na0   ; |FIFO|RAM:R|MC:M2|edge_dff:dff3|na0   ; out0             ;
+; |FIFO|RAM:R|MC:M2|edge_dff:dff3|na1   ; |FIFO|RAM:R|MC:M2|edge_dff:dff3|na1   ; out0             ;
+; |FIFO|RAM:R|MC:M2|edge_dff:dff3|na2   ; |FIFO|RAM:R|MC:M2|edge_dff:dff3|na2   ; out0             ;
+; |FIFO|RAM:R|MC:M2|edge_dff:dff3|na3   ; |FIFO|RAM:R|MC:M2|edge_dff:dff3|na3   ; out0             ;
+; |FIFO|RAM:R|MC:M2|edge_dff:dff3|na4   ; |FIFO|RAM:R|MC:M2|edge_dff:dff3|na4   ; out0             ;
+; |FIFO|RAM:R|MC:M2|edge_dff:dff3|na5   ; |FIFO|RAM:R|MC:M2|edge_dff:dff3|na5   ; out0             ;
+; |FIFO|RAM:R|MC:M2|edge_dff:dff3|na6   ; |FIFO|RAM:R|MC:M2|edge_dff:dff3|na6   ; out0             ;
+; |FIFO|RAM:R|MC:M2|edge_dff:dff3|na7   ; |FIFO|RAM:R|MC:M2|edge_dff:dff3|na7   ; out0             ;
+; |FIFO|RAM:R|MC:M2|edge_dff:dff2|na0   ; |FIFO|RAM:R|MC:M2|edge_dff:dff2|na0   ; out0             ;
+; |FIFO|RAM:R|MC:M2|edge_dff:dff2|na1   ; |FIFO|RAM:R|MC:M2|edge_dff:dff2|na1   ; out0             ;
+; |FIFO|RAM:R|MC:M2|edge_dff:dff2|na2   ; |FIFO|RAM:R|MC:M2|edge_dff:dff2|na2   ; out0             ;
+; |FIFO|RAM:R|MC:M2|edge_dff:dff2|na3   ; |FIFO|RAM:R|MC:M2|edge_dff:dff2|na3   ; out0             ;
+; |FIFO|RAM:R|MC:M2|edge_dff:dff2|na4   ; |FIFO|RAM:R|MC:M2|edge_dff:dff2|na4   ; out0             ;
+; |FIFO|RAM:R|MC:M2|edge_dff:dff2|na5   ; |FIFO|RAM:R|MC:M2|edge_dff:dff2|na5   ; out0             ;
+; |FIFO|RAM:R|MC:M2|edge_dff:dff2|na6   ; |FIFO|RAM:R|MC:M2|edge_dff:dff2|na6   ; out0             ;
+; |FIFO|RAM:R|MC:M2|edge_dff:dff2|na7   ; |FIFO|RAM:R|MC:M2|edge_dff:dff2|na7   ; out0             ;
+; |FIFO|RAM:R|MC:M2|edge_dff:dff1|na0   ; |FIFO|RAM:R|MC:M2|edge_dff:dff1|na0   ; out0             ;
+; |FIFO|RAM:R|MC:M2|edge_dff:dff1|na1   ; |FIFO|RAM:R|MC:M2|edge_dff:dff1|na1   ; out0             ;
+; |FIFO|RAM:R|MC:M2|edge_dff:dff1|na2   ; |FIFO|RAM:R|MC:M2|edge_dff:dff1|na2   ; out0             ;
+; |FIFO|RAM:R|MC:M2|edge_dff:dff1|na3   ; |FIFO|RAM:R|MC:M2|edge_dff:dff1|na3   ; out0             ;
+; |FIFO|RAM:R|MC:M2|edge_dff:dff1|na4   ; |FIFO|RAM:R|MC:M2|edge_dff:dff1|na4   ; out0             ;
+; |FIFO|RAM:R|MC:M2|edge_dff:dff1|na5   ; |FIFO|RAM:R|MC:M2|edge_dff:dff1|na5   ; out0             ;
+; |FIFO|RAM:R|MC:M2|edge_dff:dff1|na6   ; |FIFO|RAM:R|MC:M2|edge_dff:dff1|na6   ; out0             ;
+; |FIFO|RAM:R|MC:M2|edge_dff:dff1|na7   ; |FIFO|RAM:R|MC:M2|edge_dff:dff1|na7   ; out0             ;
+; |FIFO|RAM:R|MC:M2|edge_dff:dff0|na0   ; |FIFO|RAM:R|MC:M2|edge_dff:dff0|na0   ; out0             ;
+; |FIFO|RAM:R|MC:M2|edge_dff:dff0|na1   ; |FIFO|RAM:R|MC:M2|edge_dff:dff0|na1   ; out0             ;
+; |FIFO|RAM:R|MC:M2|edge_dff:dff0|na2   ; |FIFO|RAM:R|MC:M2|edge_dff:dff0|na2   ; out0             ;
+; |FIFO|RAM:R|MC:M2|edge_dff:dff0|na3   ; |FIFO|RAM:R|MC:M2|edge_dff:dff0|na3   ; out0             ;
+; |FIFO|RAM:R|MC:M2|edge_dff:dff0|na4   ; |FIFO|RAM:R|MC:M2|edge_dff:dff0|na4   ; out0             ;
+; |FIFO|RAM:R|MC:M2|edge_dff:dff0|na5   ; |FIFO|RAM:R|MC:M2|edge_dff:dff0|na5   ; out0             ;
+; |FIFO|RAM:R|MC:M2|edge_dff:dff0|na6   ; |FIFO|RAM:R|MC:M2|edge_dff:dff0|na6   ; out0             ;
+; |FIFO|RAM:R|MC:M2|edge_dff:dff0|na7   ; |FIFO|RAM:R|MC:M2|edge_dff:dff0|na7   ; out0             ;
+; |FIFO|RAM:R|MC:M1|a0                  ; |FIFO|RAM:R|MC:M1|a0                  ; out0             ;
+; |FIFO|RAM:R|MC:M1|b0                  ; |FIFO|RAM:R|MC:M1|b0                  ; out              ;
+; |FIFO|RAM:R|MC:M1|b1                  ; |FIFO|RAM:R|MC:M1|b1                  ; out              ;
+; |FIFO|RAM:R|MC:M1|b2                  ; |FIFO|RAM:R|MC:M1|b2                  ; out              ;
+; |FIFO|RAM:R|MC:M1|b3                  ; |FIFO|RAM:R|MC:M1|b3                  ; out              ;
+; |FIFO|RAM:R|MC:M1|edge_dff:dff3|na0   ; |FIFO|RAM:R|MC:M1|edge_dff:dff3|na0   ; out0             ;
+; |FIFO|RAM:R|MC:M1|edge_dff:dff3|na1   ; |FIFO|RAM:R|MC:M1|edge_dff:dff3|na1   ; out0             ;
+; |FIFO|RAM:R|MC:M1|edge_dff:dff3|na2   ; |FIFO|RAM:R|MC:M1|edge_dff:dff3|na2   ; out0             ;
+; |FIFO|RAM:R|MC:M1|edge_dff:dff3|na3   ; |FIFO|RAM:R|MC:M1|edge_dff:dff3|na3   ; out0             ;
+; |FIFO|RAM:R|MC:M1|edge_dff:dff3|na4   ; |FIFO|RAM:R|MC:M1|edge_dff:dff3|na4   ; out0             ;
+; |FIFO|RAM:R|MC:M1|edge_dff:dff3|na5   ; |FIFO|RAM:R|MC:M1|edge_dff:dff3|na5   ; out0             ;
+; |FIFO|RAM:R|MC:M1|edge_dff:dff3|na6   ; |FIFO|RAM:R|MC:M1|edge_dff:dff3|na6   ; out0             ;
+; |FIFO|RAM:R|MC:M1|edge_dff:dff3|na7   ; |FIFO|RAM:R|MC:M1|edge_dff:dff3|na7   ; out0             ;
+; |FIFO|RAM:R|MC:M1|edge_dff:dff2|na0   ; |FIFO|RAM:R|MC:M1|edge_dff:dff2|na0   ; out0             ;
+; |FIFO|RAM:R|MC:M1|edge_dff:dff2|na1   ; |FIFO|RAM:R|MC:M1|edge_dff:dff2|na1   ; out0             ;
+; |FIFO|RAM:R|MC:M1|edge_dff:dff2|na2   ; |FIFO|RAM:R|MC:M1|edge_dff:dff2|na2   ; out0             ;
+; |FIFO|RAM:R|MC:M1|edge_dff:dff2|na3   ; |FIFO|RAM:R|MC:M1|edge_dff:dff2|na3   ; out0             ;
+; |FIFO|RAM:R|MC:M1|edge_dff:dff2|na4   ; |FIFO|RAM:R|MC:M1|edge_dff:dff2|na4   ; out0             ;
+; |FIFO|RAM:R|MC:M1|edge_dff:dff2|na5   ; |FIFO|RAM:R|MC:M1|edge_dff:dff2|na5   ; out0             ;
+; |FIFO|RAM:R|MC:M1|edge_dff:dff2|na6   ; |FIFO|RAM:R|MC:M1|edge_dff:dff2|na6   ; out0             ;
+; |FIFO|RAM:R|MC:M1|edge_dff:dff2|na7   ; |FIFO|RAM:R|MC:M1|edge_dff:dff2|na7   ; out0             ;
+; |FIFO|RAM:R|MC:M1|edge_dff:dff1|na0   ; |FIFO|RAM:R|MC:M1|edge_dff:dff1|na0   ; out0             ;
+; |FIFO|RAM:R|MC:M1|edge_dff:dff1|na1   ; |FIFO|RAM:R|MC:M1|edge_dff:dff1|na1   ; out0             ;
+; |FIFO|RAM:R|MC:M1|edge_dff:dff1|na2   ; |FIFO|RAM:R|MC:M1|edge_dff:dff1|na2   ; out0             ;
+; |FIFO|RAM:R|MC:M1|edge_dff:dff1|na3   ; |FIFO|RAM:R|MC:M1|edge_dff:dff1|na3   ; out0             ;
+; |FIFO|RAM:R|MC:M1|edge_dff:dff1|na4   ; |FIFO|RAM:R|MC:M1|edge_dff:dff1|na4   ; out0             ;
+; |FIFO|RAM:R|MC:M1|edge_dff:dff1|na5   ; |FIFO|RAM:R|MC:M1|edge_dff:dff1|na5   ; out0             ;
+; |FIFO|RAM:R|MC:M1|edge_dff:dff1|na6   ; |FIFO|RAM:R|MC:M1|edge_dff:dff1|na6   ; out0             ;
+; |FIFO|RAM:R|MC:M1|edge_dff:dff1|na7   ; |FIFO|RAM:R|MC:M1|edge_dff:dff1|na7   ; out0             ;
+; |FIFO|RAM:R|MC:M1|edge_dff:dff0|na0   ; |FIFO|RAM:R|MC:M1|edge_dff:dff0|na0   ; out0             ;
+; |FIFO|RAM:R|MC:M1|edge_dff:dff0|na1   ; |FIFO|RAM:R|MC:M1|edge_dff:dff0|na1   ; out0             ;
+; |FIFO|RAM:R|MC:M1|edge_dff:dff0|na2   ; |FIFO|RAM:R|MC:M1|edge_dff:dff0|na2   ; out0             ;
+; |FIFO|RAM:R|MC:M1|edge_dff:dff0|na3   ; |FIFO|RAM:R|MC:M1|edge_dff:dff0|na3   ; out0             ;
+; |FIFO|RAM:R|MC:M1|edge_dff:dff0|na4   ; |FIFO|RAM:R|MC:M1|edge_dff:dff0|na4   ; out0             ;
+; |FIFO|RAM:R|MC:M1|edge_dff:dff0|na5   ; |FIFO|RAM:R|MC:M1|edge_dff:dff0|na5   ; out0             ;
+; |FIFO|RAM:R|MC:M1|edge_dff:dff0|na6   ; |FIFO|RAM:R|MC:M1|edge_dff:dff0|na6   ; out0             ;
+; |FIFO|RAM:R|MC:M1|edge_dff:dff0|na7   ; |FIFO|RAM:R|MC:M1|edge_dff:dff0|na7   ; out0             ;
+; |FIFO|RAM:R|MC:M0|a0                  ; |FIFO|RAM:R|MC:M0|a0                  ; out0             ;
+; |FIFO|RAM:R|MC:M0|b0                  ; |FIFO|RAM:R|MC:M0|b0                  ; out              ;
+; |FIFO|RAM:R|MC:M0|b1                  ; |FIFO|RAM:R|MC:M0|b1                  ; out              ;
+; |FIFO|RAM:R|MC:M0|b2                  ; |FIFO|RAM:R|MC:M0|b2                  ; out              ;
+; |FIFO|RAM:R|MC:M0|b3                  ; |FIFO|RAM:R|MC:M0|b3                  ; out              ;
+; |FIFO|RAM:R|MC:M0|edge_dff:dff3|na0   ; |FIFO|RAM:R|MC:M0|edge_dff:dff3|na0   ; out0             ;
+; |FIFO|RAM:R|MC:M0|edge_dff:dff3|na1   ; |FIFO|RAM:R|MC:M0|edge_dff:dff3|na1   ; out0             ;
+; |FIFO|RAM:R|MC:M0|edge_dff:dff3|na2   ; |FIFO|RAM:R|MC:M0|edge_dff:dff3|na2   ; out0             ;
+; |FIFO|RAM:R|MC:M0|edge_dff:dff3|na3   ; |FIFO|RAM:R|MC:M0|edge_dff:dff3|na3   ; out0             ;
+; |FIFO|RAM:R|MC:M0|edge_dff:dff3|na4   ; |FIFO|RAM:R|MC:M0|edge_dff:dff3|na4   ; out0             ;
+; |FIFO|RAM:R|MC:M0|edge_dff:dff3|na5   ; |FIFO|RAM:R|MC:M0|edge_dff:dff3|na5   ; out0             ;
+; |FIFO|RAM:R|MC:M0|edge_dff:dff2|na0   ; |FIFO|RAM:R|MC:M0|edge_dff:dff2|na0   ; out0             ;
+; |FIFO|RAM:R|MC:M0|edge_dff:dff2|na1   ; |FIFO|RAM:R|MC:M0|edge_dff:dff2|na1   ; out0             ;
+; |FIFO|RAM:R|MC:M0|edge_dff:dff2|na2   ; |FIFO|RAM:R|MC:M0|edge_dff:dff2|na2   ; out0             ;
+; |FIFO|RAM:R|MC:M0|edge_dff:dff2|na3   ; |FIFO|RAM:R|MC:M0|edge_dff:dff2|na3   ; out0             ;
+; |FIFO|RAM:R|MC:M0|edge_dff:dff2|na4   ; |FIFO|RAM:R|MC:M0|edge_dff:dff2|na4   ; out0             ;
+; |FIFO|RAM:R|MC:M0|edge_dff:dff2|na5   ; |FIFO|RAM:R|MC:M0|edge_dff:dff2|na5   ; out0             ;
+; |FIFO|RAM:R|MC:M0|edge_dff:dff2|na6   ; |FIFO|RAM:R|MC:M0|edge_dff:dff2|na6   ; out0             ;
+; |FIFO|RAM:R|MC:M0|edge_dff:dff2|na7   ; |FIFO|RAM:R|MC:M0|edge_dff:dff2|na7   ; out0             ;
+; |FIFO|RAM:R|MC:M0|edge_dff:dff1|na0   ; |FIFO|RAM:R|MC:M0|edge_dff:dff1|na0   ; out0             ;
+; |FIFO|RAM:R|MC:M0|edge_dff:dff1|na1   ; |FIFO|RAM:R|MC:M0|edge_dff:dff1|na1   ; out0             ;
+; |FIFO|RAM:R|MC:M0|edge_dff:dff1|na2   ; |FIFO|RAM:R|MC:M0|edge_dff:dff1|na2   ; out0             ;
+; |FIFO|RAM:R|MC:M0|edge_dff:dff1|na3   ; |FIFO|RAM:R|MC:M0|edge_dff:dff1|na3   ; out0             ;
+; |FIFO|RAM:R|MC:M0|edge_dff:dff1|na4   ; |FIFO|RAM:R|MC:M0|edge_dff:dff1|na4   ; out0             ;
+; |FIFO|RAM:R|MC:M0|edge_dff:dff1|na5   ; |FIFO|RAM:R|MC:M0|edge_dff:dff1|na5   ; out0             ;
+; |FIFO|RAM:R|MC:M0|edge_dff:dff1|na6   ; |FIFO|RAM:R|MC:M0|edge_dff:dff1|na6   ; out0             ;
+; |FIFO|RAM:R|MC:M0|edge_dff:dff1|na7   ; |FIFO|RAM:R|MC:M0|edge_dff:dff1|na7   ; out0             ;
+; |FIFO|RAM:R|MC:M0|edge_dff:dff0|na0   ; |FIFO|RAM:R|MC:M0|edge_dff:dff0|na0   ; out0             ;
+; |FIFO|RAM:R|MC:M0|edge_dff:dff0|na1   ; |FIFO|RAM:R|MC:M0|edge_dff:dff0|na1   ; out0             ;
+; |FIFO|RAM:R|MC:M0|edge_dff:dff0|na2   ; |FIFO|RAM:R|MC:M0|edge_dff:dff0|na2   ; out0             ;
+; |FIFO|RAM:R|MC:M0|edge_dff:dff0|na3   ; |FIFO|RAM:R|MC:M0|edge_dff:dff0|na3   ; out0             ;
+; |FIFO|RAM:R|MC:M0|edge_dff:dff0|na4   ; |FIFO|RAM:R|MC:M0|edge_dff:dff0|na4   ; out0             ;
+; |FIFO|RAM:R|MC:M0|edge_dff:dff0|na5   ; |FIFO|RAM:R|MC:M0|edge_dff:dff0|na5   ; out0             ;
+; |FIFO|RAM:R|MC:M0|edge_dff:dff0|na6   ; |FIFO|RAM:R|MC:M0|edge_dff:dff0|na6   ; out0             ;
+; |FIFO|RAM:R|MC:M0|edge_dff:dff0|na7   ; |FIFO|RAM:R|MC:M0|edge_dff:dff0|na7   ; out0             ;
+; |FIFO|RAM:R|decode2_4:U1|a0           ; |FIFO|RAM:R|decode2_4:U1|a0           ; out0             ;
+; |FIFO|RAM:R|decode2_4:U1|a1           ; |FIFO|RAM:R|decode2_4:U1|a1           ; out0             ;
+; |FIFO|RAM:R|decode2_4:U1|a2           ; |FIFO|RAM:R|decode2_4:U1|a2           ; out0             ;
+; |FIFO|RAM:R|decode2_4:U1|a3           ; |FIFO|RAM:R|decode2_4:U1|a3           ; out0             ;
+; |FIFO|mux2_to_1:Selector|a0           ; |FIFO|mux2_to_1:Selector|a0           ; out0             ;
+; |FIFO|mux2_to_1:Selector|a1           ; |FIFO|mux2_to_1:Selector|a1           ; out0             ;
+; |FIFO|mux2_to_1:Selector|a2           ; |FIFO|mux2_to_1:Selector|a2           ; out0             ;
+; |FIFO|mux2_to_1:Selector|a3           ; |FIFO|mux2_to_1:Selector|a3           ; out0             ;
+; |FIFO|mux2_to_1:Selector|o0           ; |FIFO|mux2_to_1:Selector|o0           ; out0             ;
+; |FIFO|mux2_to_1:Selector|o1           ; |FIFO|mux2_to_1:Selector|o1           ; out0             ;
+; |FIFO|CMP:Comparator|a1               ; |FIFO|CMP:Comparator|a1               ; out0             ;
+; |FIFO|CMP:Comparator|o0               ; |FIFO|CMP:Comparator|o0               ; out0             ;
+; |FIFO|CMP:Comparator|a3               ; |FIFO|CMP:Comparator|a3               ; out0             ;
+; |FIFO|CMP:Comparator|o1               ; |FIFO|CMP:Comparator|o1               ; out0             ;
+; |FIFO|CMP:Comparator|a4               ; |FIFO|CMP:Comparator|a4               ; out0             ;
+; |FIFO|counter:Back|edge_dff:dff1|na0  ; |FIFO|counter:Back|edge_dff:dff1|na0  ; out0             ;
+; |FIFO|counter:Back|edge_dff:dff1|na1  ; |FIFO|counter:Back|edge_dff:dff1|na1  ; out0             ;
+; |FIFO|counter:Back|edge_dff:dff1|na2  ; |FIFO|counter:Back|edge_dff:dff1|na2  ; out0             ;
+; |FIFO|counter:Back|edge_dff:dff1|na3  ; |FIFO|counter:Back|edge_dff:dff1|na3  ; out0             ;
+; |FIFO|counter:Back|edge_dff:dff1|na4  ; |FIFO|counter:Back|edge_dff:dff1|na4  ; out0             ;
+; |FIFO|counter:Back|edge_dff:dff1|na5  ; |FIFO|counter:Back|edge_dff:dff1|na5  ; out0             ;
+; |FIFO|counter:Back|edge_dff:dff1|na6  ; |FIFO|counter:Back|edge_dff:dff1|na6  ; out0             ;
+; |FIFO|counter:Back|edge_dff:dff1|na7  ; |FIFO|counter:Back|edge_dff:dff1|na7  ; out0             ;
+; |FIFO|counter:Back|edge_dff:dff0|na0  ; |FIFO|counter:Back|edge_dff:dff0|na0  ; out0             ;
+; |FIFO|counter:Back|edge_dff:dff0|na1  ; |FIFO|counter:Back|edge_dff:dff0|na1  ; out0             ;
+; |FIFO|counter:Back|edge_dff:dff0|na2  ; |FIFO|counter:Back|edge_dff:dff0|na2  ; out0             ;
+; |FIFO|counter:Back|edge_dff:dff0|na3  ; |FIFO|counter:Back|edge_dff:dff0|na3  ; out0             ;
+; |FIFO|counter:Back|edge_dff:dff0|na4  ; |FIFO|counter:Back|edge_dff:dff0|na4  ; out0             ;
+; |FIFO|counter:Back|edge_dff:dff0|na5  ; |FIFO|counter:Back|edge_dff:dff0|na5  ; out0             ;
+; |FIFO|counter:Back|edge_dff:dff0|na6  ; |FIFO|counter:Back|edge_dff:dff0|na6  ; out0             ;
+; |FIFO|counter:Back|edge_dff:dff0|na7  ; |FIFO|counter:Back|edge_dff:dff0|na7  ; out0             ;
+; |FIFO|counter:Back|HA:H1|a0           ; |FIFO|counter:Back|HA:H1|a0           ; out0             ;
+; |FIFO|counter:Back|HA:H1|x0           ; |FIFO|counter:Back|HA:H1|x0           ; out0             ;
+; |FIFO|counter:Back|HA:H0|a0           ; |FIFO|counter:Back|HA:H0|a0           ; out0             ;
+; |FIFO|counter:Back|HA:H0|x0           ; |FIFO|counter:Back|HA:H0|x0           ; out0             ;
+; |FIFO|counter:Front|edge_dff:dff1|na0 ; |FIFO|counter:Front|edge_dff:dff1|na0 ; out0             ;
+; |FIFO|counter:Front|edge_dff:dff1|na1 ; |FIFO|counter:Front|edge_dff:dff1|na1 ; out0             ;
+; |FIFO|counter:Front|edge_dff:dff1|na2 ; |FIFO|counter:Front|edge_dff:dff1|na2 ; out0             ;
+; |FIFO|counter:Front|edge_dff:dff1|na3 ; |FIFO|counter:Front|edge_dff:dff1|na3 ; out0             ;
+; |FIFO|counter:Front|edge_dff:dff1|na4 ; |FIFO|counter:Front|edge_dff:dff1|na4 ; out0             ;
+; |FIFO|counter:Front|edge_dff:dff1|na5 ; |FIFO|counter:Front|edge_dff:dff1|na5 ; out0             ;
+; |FIFO|counter:Front|edge_dff:dff1|na6 ; |FIFO|counter:Front|edge_dff:dff1|na6 ; out0             ;
+; |FIFO|counter:Front|edge_dff:dff1|na7 ; |FIFO|counter:Front|edge_dff:dff1|na7 ; out0             ;
+; |FIFO|counter:Front|edge_dff:dff0|na0 ; |FIFO|counter:Front|edge_dff:dff0|na0 ; out0             ;
+; |FIFO|counter:Front|edge_dff:dff0|na1 ; |FIFO|counter:Front|edge_dff:dff0|na1 ; out0             ;
+; |FIFO|counter:Front|edge_dff:dff0|na2 ; |FIFO|counter:Front|edge_dff:dff0|na2 ; out0             ;
+; |FIFO|counter:Front|edge_dff:dff0|na3 ; |FIFO|counter:Front|edge_dff:dff0|na3 ; out0             ;
+; |FIFO|counter:Front|edge_dff:dff0|na4 ; |FIFO|counter:Front|edge_dff:dff0|na4 ; out0             ;
+; |FIFO|counter:Front|edge_dff:dff0|na5 ; |FIFO|counter:Front|edge_dff:dff0|na5 ; out0             ;
+; |FIFO|counter:Front|edge_dff:dff0|na6 ; |FIFO|counter:Front|edge_dff:dff0|na6 ; out0             ;
+; |FIFO|counter:Front|edge_dff:dff0|na7 ; |FIFO|counter:Front|edge_dff:dff0|na7 ; out0             ;
+; |FIFO|counter:Front|HA:H1|a0          ; |FIFO|counter:Front|HA:H1|a0          ; out0             ;
+; |FIFO|counter:Front|HA:H1|x0          ; |FIFO|counter:Front|HA:H1|x0          ; out0             ;
+; |FIFO|counter:Front|HA:H0|a0          ; |FIFO|counter:Front|HA:H0|a0          ; out0             ;
+; |FIFO|counter:Front|HA:H0|x0          ; |FIFO|counter:Front|HA:H0|x0          ; out0             ;
++---------------------------------------+---------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                     ;
++-------------------------------------+-------------------------------------+------------------+
+; Node Name                           ; Output Port Name                    ; Output Port Type ;
++-------------------------------------+-------------------------------------+------------------+
+; |FIFO|clear                         ; |FIFO|clear                         ; out              ;
+; |FIFO|En                            ; |FIFO|En                            ; out              ;
+; |FIFO|RAM:R|MC:M0|edge_dff:dff3|na6 ; |FIFO|RAM:R|MC:M0|edge_dff:dff3|na6 ; out0             ;
+; |FIFO|CMP:Comparator|a0             ; |FIFO|CMP:Comparator|a0             ; out0             ;
+; |FIFO|CMP:Comparator|a2             ; |FIFO|CMP:Comparator|a2             ; out0             ;
++-------------------------------------+-------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                     ;
++-------------------------------------+-------------------------------------+------------------+
+; Node Name                           ; Output Port Name                    ; Output Port Type ;
++-------------------------------------+-------------------------------------+------------------+
+; |FIFO|En                            ; |FIFO|En                            ; out              ;
+; |FIFO|RAM:R|MC:M0|edge_dff:dff3|na7 ; |FIFO|RAM:R|MC:M0|edge_dff:dff3|na7 ; out0             ;
+; |FIFO|CMP:Comparator|a0             ; |FIFO|CMP:Comparator|a0             ; out0             ;
+; |FIFO|CMP:Comparator|a2             ; |FIFO|CMP:Comparator|a2             ; out0             ;
++-------------------------------------+-------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Nov 15 13:09:39 2023
+Info: Command: quartus_sim --simulation_results_format=VWF FIFO -c FIFO
+Info (324025): Using vector source file "D:/TKHDL/FIFO/Waveform1.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      97.44 %
+Info (328052): Number of transitions in simulation is 5379
+Info (324045): Vector file FIFO.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4452 megabytes
+    Info: Processing ended: Wed Nov 15 13:09:41 2023
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

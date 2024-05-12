@@ -1,0 +1,10 @@
+module reg_file_cell(out, RS, WS, Input, clk);
+	output out;
+	input RS, WS, Input, clk;
+	wire w_and1, w_and2, w_or1, w_dff;
+	edge_dff1(w_dff, ,w_or1,clk,);
+	and a1(and1, ~WS, w_dff);
+	and a2(and2, WS, Input);
+	or o1(w_or1, w_and1, w_and2);
+	bufif1 (out, w_dff, RS);
+endmodule

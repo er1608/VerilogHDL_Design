@@ -1,0 +1,27 @@
+module AU1_pipeline(out, InA, InB, op, clk, OE, WS, RS);
+	output [4:0] out;
+	input [4:0] InA, InB;
+	input [1:0] op;
+	input clk, OE, WS, RS;
+	wire [4:0]w_RD1, w_RD2, w_RD3, w_ab, w_sub, w_mux1;
+	wire [2:0]w_Sig_Delay;
+	wire [2:0]c_sig;
+	wire w_or1, w_and1, w_and2, w_and3, w_or2, w_and4;
+	
+	assign c_sig[1:0] = op[1:0];
+	assign c_sig[2] = 1'b0;
+	Reg_Delay_3b Sig_Delay(w_Sig_Delay, c_sig, clk, RS, WS, OE);
+	Reg_Delay_5b RD1(w_RD1, InA, clk, RS, WS, OE);
+	Reg_Delay_5b RD2(w_RD2, InB, clk, RS, WS, OE);
+	or or1(w_or1, c_sig[1], ~c_sig[0]);
+	and_bus ab(w_ab, InA, w_or1);
+	Sub_5b sub(w_sub, w_ab, InB);
+	Reg_Delay_5b RD3(w_RD3, w_sub, clk, RS, WS, OE);
+	and a1(w_and1, ~w_Sig_Delay[1], w_Sig_Delay[0]);
+	and a2(w_and2, w_Sig_Delay[0], w_RD3[4]);
+	assign w_and3 = w_Sig_Delay[1] & ~w_Sig_Delay[0] & ~w_RD3[4];
+	assign w_or2 = w_and1 | w_and2 | w_and3;
+	mux2_5b mux1(w_mux1, w_RD1, w_RD2, w_or2);
+	and a4(w_and4, ~w_Sig_Delay[1], ~w_RD3[4]);
+	mux2_5b mux2(out, w_mux1, w_RD3, w_and4);
+endmodule

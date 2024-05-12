@@ -1,0 +1,15 @@
+D:/TKHDL/FIFO_POST/FIFO2.vo {1 {vlog -work work -vopt -stats=none D:/TKHDL/FIFO_POST/FIFO2.vo
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module FIFO
+
+Top level modules:
+	FIFO
+
+} {} {}} D:/TKHDL/FIFO_POST/Testbench.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/FIFO_POST/Testbench.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module Testbench
+
+Top level modules:
+	Testbench
+
+} {} {}}

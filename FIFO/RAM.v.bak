@@ -1,0 +1,36 @@
+module decode2_4(y0, y1, y2, y3, s0, s1);
+ output y0, y1, y2, y3;
+ input s0, s1;
+ 
+ wire s1n, s0n;
+ 
+ not(s1n, s1);
+ not(s0n, s0);
+ and(y0, s1n, s0n);
+ and(y1, s1n, s0);
+ and(y2, s1, s0n);
+ and(y3, s1, s0);
+
+endmodule
+
+module RAM(A1, A0, I3, I2, I1, I0, RWS, CS, O3, O2, O1, O0, clear);
+ input A1, A0, I, RWS, CS, clear;
+ output O3, O2, O1, O0;
+ 
+ wire l0, l1, l2, l3, nRWS, W, TRI_EN, f0, f1, f2, f3;
+ decode2_4 U1 (l0, l1, l2, l3, A0, A1);
+ not(nRWS, RWS);
+ and(W, RWS, CS);
+ and(TRI_EN, CS, nRWS);
+
+ MC M0(l0, I0, I1, I2, I3, W, f0, f1, f2, f3, clear);
+ MC M1(l1, I0, I1, I2, I3, W, f0, f1, f2, f3, clear);
+ MC M2(l2, I0, I1, I2, I3, W, f0, f1, f2, f3, clear);
+ MC M3(l3, I0, I1, I2, I3, W, f0, f1, f2, f3, clear);
+
+ bufif1(O0, f0, TRI_EN);
+ bufif1(O1, f1, TRI_EN);
+ bufif1(O2, f2, TRI_EN);
+ bufif1(O3, f3, TRI_EN);
+endmodule
+

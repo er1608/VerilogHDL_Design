@@ -1,0 +1,15 @@
+D:/TKHDL/demo.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/demo.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module demo
+
+Top level modules:
+	demo
+
+} {} {}} D:/TKHDL/top.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/top.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module top
+
+Top level modules:
+	top
+
+} {} {}}

@@ -1,0 +1,463 @@
+Analysis & Synthesis report for DA
+Fri Jan 05 12:59:59 2024
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis DSP Block Usage Summary
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: Top-level Entity: |convUnit
+ 12. Parameter Settings for User Entity Instance: processingElement:PE
+ 13. Parameter Settings for Inferred Entity Instance: processingElement:PE|floatMult:FM|lpm_mult:Mult0
+ 14. lpm_mult Parameter Settings by Entity Instance
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri Jan 05 12:59:59 2024           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; DA                                              ;
+; Top-level Entity Name              ; convUnit                                        ;
+; Family                             ; Cyclone II                                      ;
+; Total logic elements               ; 1,241                                           ;
+;     Total combinational functions  ; 1,241                                           ;
+;     Dedicated logic registers      ; 80                                              ;
+; Total registers                    ; 80                                              ;
+; Total pins                         ; 818                                             ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 2                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP2C35F672C6       ;                    ;
+; Top-level entity name                                                      ; convUnit           ; DA                 ;
+; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                          ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                      ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------+---------+
+; floatMult.v                      ; yes             ; User Verilog HDL File        ; D:/TKHDL/DO_AN/floatMult.v                                        ;         ;
+; floatAdd.v                       ; yes             ; User Verilog HDL File        ; D:/TKHDL/DO_AN/floatAdd.v                                         ;         ;
+; processingElement.v              ; yes             ; User Verilog HDL File        ; D:/TKHDL/DO_AN/processingElement.v                                ;         ;
+; convUnit.v                       ; yes             ; User Verilog HDL File        ; D:/TKHDL/DO_AN/convUnit.v                                         ;         ;
+; lpm_mult.tdf                     ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mult.tdf    ;         ;
+; aglobal130.inc                   ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc  ;         ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_add_sub.inc ;         ;
+; multcore.inc                     ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/multcore.inc    ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/bypassff.inc    ;         ;
+; altshift.inc                     ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altshift.inc    ;         ;
+; db/mult_a8t.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/TKHDL/DO_AN/db/mult_a8t.tdf                                    ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 1,241 ;
+;                                             ;       ;
+; Total combinational functions               ; 1241  ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 870   ;
+;     -- 3 input functions                    ; 236   ;
+;     -- <=2 input functions                  ; 135   ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 1086  ;
+;     -- arithmetic mode                      ; 155   ;
+;                                             ;       ;
+; Total registers                             ; 80    ;
+;     -- Dedicated logic registers            ; 80    ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 818   ;
+; Embedded Multiplier 9-bit elements          ; 2     ;
+; Maximum fan-out node                        ; i[3]  ;
+; Maximum fan-out                             ; 175   ;
+; Total fan-out                               ; 4668  ;
+; Average fan-out                             ; 2.18  ;
++---------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                   ;
++---------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node            ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                ; Library Name ;
++---------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------+--------------+
+; |convUnit                             ; 1241 (593)        ; 80 (64)      ; 0           ; 2            ; 0       ; 1         ; 818  ; 0            ; |convUnit                                                                          ; work         ;
+;    |processingElement:PE|             ; 648 (27)          ; 16 (16)      ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |convUnit|processingElement:PE                                                     ; work         ;
+;       |floatAdd:FADD|                 ; 399 (399)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |convUnit|processingElement:PE|floatAdd:FADD                                       ; work         ;
+;       |floatMult:FM|                  ; 222 (222)         ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |convUnit|processingElement:PE|floatMult:FM                                        ; work         ;
+;          |lpm_mult:Mult0|             ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |convUnit|processingElement:PE|floatMult:FM|lpm_mult:Mult0                         ; work         ;
+;             |mult_a8t:auto_generated| ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |convUnit|processingElement:PE|floatMult:FM|lpm_mult:Mult0|mult_a8t:auto_generated ; work         ;
++---------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary        ;
++---------------------------------------+-------------+
+; Statistic                             ; Number Used ;
++---------------------------------------+-------------+
+; Simple Multipliers (9-bit)            ; 0           ;
+; Simple Multipliers (18-bit)           ; 1           ;
+; Embedded Multiplier Blocks            ; --          ;
+; Embedded Multiplier 9-bit elements    ; 2           ;
+; Signed Embedded Multipliers           ; 0           ;
+; Unsigned Embedded Multipliers         ; 1           ;
+; Mixed Sign Embedded Multipliers       ; 0           ;
+; Variable Sign Embedded Multipliers    ; 0           ;
+; Dedicated Input Shift Register Chains ; 0           ;
++---------------------------------------+-------------+
+Note: number of Embedded Multiplier Blocks used is only available after a successful fit.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 80    ;
+; Number of registers using Synchronous Clear  ; 14    ;
+; Number of registers using Synchronous Load   ; 14    ;
+; Number of registers using Asynchronous Clear ; 80    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 47    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
+; 65:1               ; 12 bits   ; 516 LEs       ; 204 LEs              ; 312 LEs                ; Yes        ; |convUnit|selectedInput2[14]                            ;
+; 17:1               ; 2 bits    ; 22 LEs        ; 18 LEs               ; 4 LEs                  ; Yes        ; |convUnit|processingElement:PE|result[13]               ;
+; 65:1               ; 20 bits   ; 860 LEs       ; 340 LEs              ; 520 LEs                ; Yes        ; |convUnit|selectedInput1[9]                             ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |convUnit|processingElement:PE|floatAdd:FADD|fractionA  ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |convUnit|processingElement:PE|floatAdd:FADD|fractionB  ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |convUnit|processingElement:PE|floatAdd:FADD|fractionA  ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |convUnit|processingElement:PE|floatAdd:FADD|fractionB  ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |convUnit|processingElement:PE|floatAdd:FADD|fractionA  ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; No         ; |convUnit|processingElement:PE|floatAdd:FADD|fractionB  ;
+; 13:1               ; 11 bits   ; 88 LEs        ; 88 LEs               ; 0 LEs                  ; No         ; |convUnit|processingElement:PE|floatMult:FM|product[14] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |convUnit ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; DATA_WIDTH     ; 16    ; Signed Integer                                  ;
+; D              ; 1     ; Signed Integer                                  ;
+; F              ; 5     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processingElement:PE ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; DATA_WIDTH     ; 16    ; Signed Integer                           ;
++----------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: processingElement:PE|floatMult:FM|lpm_mult:Mult0 ;
++------------------------------------------------+------------+-------------------------------------+
+; Parameter Name                                 ; Value      ; Type                                ;
++------------------------------------------------+------------+-------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON         ; AUTO_CARRY                          ;
+; IGNORE_CARRY_BUFFERS                           ; OFF        ; IGNORE_CARRY                        ;
+; AUTO_CASCADE_CHAINS                            ; ON         ; AUTO_CASCADE                        ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF        ; IGNORE_CASCADE                      ;
+; LPM_WIDTHA                                     ; 11         ; Untyped                             ;
+; LPM_WIDTHB                                     ; 11         ; Untyped                             ;
+; LPM_WIDTHP                                     ; 22         ; Untyped                             ;
+; LPM_WIDTHR                                     ; 22         ; Untyped                             ;
+; LPM_WIDTHS                                     ; 1          ; Untyped                             ;
+; LPM_REPRESENTATION                             ; UNSIGNED   ; Untyped                             ;
+; LPM_PIPELINE                                   ; 0          ; Untyped                             ;
+; LATENCY                                        ; 0          ; Untyped                             ;
+; INPUT_A_IS_CONSTANT                            ; NO         ; Untyped                             ;
+; INPUT_B_IS_CONSTANT                            ; NO         ; Untyped                             ;
+; USE_EAB                                        ; OFF        ; Untyped                             ;
+; MAXIMIZE_SPEED                                 ; 6          ; Untyped                             ;
+; DEVICE_FAMILY                                  ; Cyclone II ; Untyped                             ;
+; CARRY_CHAIN                                    ; MANUAL     ; Untyped                             ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT        ; TECH_MAPPER_APEX20K                 ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO       ; Untyped                             ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0          ; Untyped                             ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0          ; Untyped                             ;
+; CBXI_PARAMETER                                 ; mult_a8t   ; Untyped                             ;
+; INPUT_A_FIXED_VALUE                            ; Bx         ; Untyped                             ;
+; INPUT_B_FIXED_VALUE                            ; Bx         ; Untyped                             ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF        ; Untyped                             ;
++------------------------------------------------+------------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; lpm_mult Parameter Settings by Entity Instance                                           ;
++---------------------------------------+--------------------------------------------------+
+; Name                                  ; Value                                            ;
++---------------------------------------+--------------------------------------------------+
+; Number of entity instances            ; 1                                                ;
+; Entity Instance                       ; processingElement:PE|floatMult:FM|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 11                                               ;
+;     -- LPM_WIDTHB                     ; 11                                               ;
+;     -- LPM_WIDTHP                     ; 22                                               ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                                         ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                               ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                               ;
+;     -- USE_EAB                        ; OFF                                              ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                             ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                               ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                               ;
++---------------------------------------+--------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:05     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Fri Jan 05 12:59:51 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DA -c DA
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file rfselector.v
+    Info (12023): Found entity 1: RFselector
+Info (12021): Found 1 design units, including 1 entities, in source file processingelement_tb.v
+    Info (12023): Found entity 1: processingElement_TB
+Info (12021): Found 1 design units, including 1 entities, in source file floatmult_tb.v
+    Info (12023): Found entity 1: floatMult_TB
+Info (12021): Found 1 design units, including 1 entities, in source file floatmult.v
+    Info (12023): Found entity 1: floatMult
+Info (12021): Found 1 design units, including 1 entities, in source file floatadd_tb.v
+    Info (12023): Found entity 1: floatAdd_TB
+Info (12021): Found 1 design units, including 1 entities, in source file floatadd.v
+    Info (12023): Found entity 1: floatAdd
+Info (12021): Found 1 design units, including 1 entities, in source file convunit_tb.v
+    Info (12023): Found entity 1: convUnit_TB
+Info (12021): Found 1 design units, including 1 entities, in source file convlayersingle_tb.v
+    Info (12023): Found entity 1: convLayerSingle_TB
+Info (12021): Found 1 design units, including 1 entities, in source file convlayersingle.v
+    Info (12023): Found entity 1: convLayerSingle
+Info (12021): Found 1 design units, including 1 entities, in source file convlayermulti_tb.v
+    Info (12023): Found entity 1: convLayerMulti_TB
+Info (12021): Found 1 design units, including 1 entities, in source file convlayermulti.v
+    Info (12023): Found entity 1: convLayerMulti
+Info (12021): Found 1 design units, including 1 entities, in source file processingelement.v
+    Info (12023): Found entity 1: processingElement
+Info (12021): Found 1 design units, including 1 entities, in source file convunit.v
+    Info (12023): Found entity 1: convUnit
+Info (12127): Elaborating entity "convUnit" for the top level hierarchy
+Info (12128): Elaborating entity "processingElement" for hierarchy "processingElement:PE"
+Info (12128): Elaborating entity "floatMult" for hierarchy "processingElement:PE|floatMult:FM"
+Warning (10230): Verilog HDL assignment warning at floatMult.v(28): truncated value with size 32 to match size of target (6)
+Warning (10230): Verilog HDL assignment warning at floatMult.v(31): truncated value with size 32 to match size of target (6)
+Warning (10230): Verilog HDL assignment warning at floatMult.v(34): truncated value with size 32 to match size of target (6)
+Warning (10230): Verilog HDL assignment warning at floatMult.v(37): truncated value with size 32 to match size of target (6)
+Warning (10230): Verilog HDL assignment warning at floatMult.v(40): truncated value with size 32 to match size of target (6)
+Warning (10230): Verilog HDL assignment warning at floatMult.v(43): truncated value with size 32 to match size of target (6)
+Warning (10230): Verilog HDL assignment warning at floatMult.v(46): truncated value with size 32 to match size of target (6)
+Warning (10230): Verilog HDL assignment warning at floatMult.v(49): truncated value with size 32 to match size of target (6)
+Warning (10230): Verilog HDL assignment warning at floatMult.v(52): truncated value with size 32 to match size of target (6)
+Warning (10230): Verilog HDL assignment warning at floatMult.v(55): truncated value with size 32 to match size of target (6)
+Warning (10240): Verilog HDL Always Construct warning at floatMult.v(15): inferring latch(es) for variable "sign", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at floatMult.v(15): inferring latch(es) for variable "exponent", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at floatMult.v(15): inferring latch(es) for variable "fractionA", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at floatMult.v(15): inferring latch(es) for variable "fractionB", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at floatMult.v(15): inferring latch(es) for variable "fraction", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at floatMult.v(15): inferring latch(es) for variable "mantissa", which holds its previous value in one or more paths through the always construct
+Info (12128): Elaborating entity "floatAdd" for hierarchy "processingElement:PE|floatAdd:FADD"
+Warning (10230): Verilog HDL assignment warning at floatAdd.v(44): truncated value with size 32 to match size of target (6)
+Warning (10230): Verilog HDL assignment warning at floatAdd.v(61): truncated value with size 32 to match size of target (6)
+Warning (10230): Verilog HDL assignment warning at floatAdd.v(64): truncated value with size 32 to match size of target (6)
+Warning (10230): Verilog HDL assignment warning at floatAdd.v(67): truncated value with size 32 to match size of target (6)
+Warning (10230): Verilog HDL assignment warning at floatAdd.v(70): truncated value with size 32 to match size of target (6)
+Warning (10230): Verilog HDL assignment warning at floatAdd.v(73): truncated value with size 32 to match size of target (6)
+Warning (10230): Verilog HDL assignment warning at floatAdd.v(76): truncated value with size 32 to match size of target (6)
+Warning (10230): Verilog HDL assignment warning at floatAdd.v(79): truncated value with size 32 to match size of target (6)
+Warning (10230): Verilog HDL assignment warning at floatAdd.v(82): truncated value with size 32 to match size of target (6)
+Warning (10230): Verilog HDL assignment warning at floatAdd.v(85): truncated value with size 32 to match size of target (6)
+Warning (10230): Verilog HDL assignment warning at floatAdd.v(88): truncated value with size 32 to match size of target (6)
+Warning (10240): Verilog HDL Always Construct warning at floatAdd.v(16): inferring latch(es) for variable "shiftAmount", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at floatAdd.v(16): inferring latch(es) for variable "cout", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at floatAdd.v(16): inferring latch(es) for variable "fraction", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at floatAdd.v(16): inferring latch(es) for variable "sign", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at floatAdd.v(16): inferring latch(es) for variable "mantissa", which holds its previous value in one or more paths through the always construct
+Info (278001): Inferred 1 megafunctions from design logic
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "processingElement:PE|floatMult:FM|Mult0"
+Info (12130): Elaborated megafunction instantiation "processingElement:PE|floatMult:FM|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "processingElement:PE|floatMult:FM|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "11"
+    Info (12134): Parameter "LPM_WIDTHB" = "11"
+    Info (12134): Parameter "LPM_WIDTHP" = "22"
+    Info (12134): Parameter "LPM_WIDTHR" = "22"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "6"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_a8t.tdf
+    Info (12023): Found entity 1: mult_a8t
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 2061 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 802 input pins
+    Info (21059): Implemented 16 output pins
+    Info (21061): Implemented 1241 logic cells
+    Info (21062): Implemented 2 DSP elements
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 33 warnings
+    Info: Peak virtual memory: 4614 megabytes
+    Info: Processing ended: Fri Jan 05 12:59:59 2024
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:06
+
+

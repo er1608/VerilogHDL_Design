@@ -1,0 +1,25 @@
+`timescale 1ns/100ps
+module Testbench();
+  reg clk;
+  reg [31:0] Inst; 
+  wire is0;
+  wire [31:0] WD, ReadData;
+
+  DATAPATH DB(clk, Inst, is0, WD, ReadData);
+
+  initial begin
+    /*add*/
+    clk = 0;
+    Inst = 32'h00430820;
+    #10;
+    /*lw*/
+    Inst = 32'h8C410000;
+    #10;
+    /*sw*/
+    Inst = 32'hAC410000;
+    #10;
+  end
+
+  always #5 clk = ~clk;
+  initial #4000 $stop;
+endmodule

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Dec 13 22:11:51 2023
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : LAB05
+Top-level Entity Name : DATAPATH
+Family : Cyclone II
+Total logic elements : 4,240
+    Total combinational functions : 4,240
+    Dedicated logic registers : 1,086
+Total registers : 1086
+Total pins : 107
+Total virtual pins : 0
+Total memory bits : 320,032
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

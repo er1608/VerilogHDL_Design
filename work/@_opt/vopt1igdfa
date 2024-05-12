@@ -1,0 +1,57 @@
+m255
+K3
+z0
+13
+cModel Technology
+dC:\altera\13.0sp1
+T_opt
+!s110 1695892958
+VV9JOPZG]OQ[OLmB>n?PN00
+04 3 4 work top fast 0
+=1-601895569baa-651545dd-32b-4174
+o-quiet -auto_acc_if_foreign -work work
+Z0 tCvgOpt 0
+n@_opt
+OL;O;10.5;63
+vdemo
+Z1 !s110 1695892939
+!i10b 1
+!s100 CULIg2khWfnf>DWfO^U@:1
+IH@oz]za6;oeG:d38oK2LS3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/TKHDL
+w1695892120
+8D:/TKHDL/demo.v
+FD:/TKHDL/demo.v
+L0 1
+Z4 OL;L;10.5;63
+r1
+!s85 0
+31
+Z5 !s108 1695892939.000000
+!s107 D:/TKHDL/demo.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/demo.v|
+!i113 0
+Z6 o-work work
+R0
+vtop
+R1
+!i10b 1
+!s100 6bA8oEXD2dZo;h6j[F@GE1
+I:]@378oFKOQE7^22W<_i33
+R2
+R3
+w1695892186
+8D:/TKHDL/top.v
+FD:/TKHDL/top.v
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/TKHDL/top.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/top.v|
+!i113 0
+R6
+R0

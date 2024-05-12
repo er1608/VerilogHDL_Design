@@ -1,0 +1,172 @@
+D:/TKHDL/Squared_Root/Verilog2.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Squared_Root/Verilog2.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module AU2_pipeline
+
+Top level modules:
+	AU2_pipeline
+
+} {} {}} D:/TKHDL/Squared_Root/mux2_5b.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Squared_Root/mux2_5b.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module mux2_5b
+
+Top level modules:
+	mux2_5b
+
+} {} {}} D:/TKHDL/Squared_Root/Register_5b.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Squared_Root/Register_5b.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module Register_5b
+
+Top level modules:
+	Register_5b
+
+} {} {}} D:/TKHDL/Squared_Root/reg_file_cell.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Squared_Root/reg_file_cell.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module reg_file_cell
+
+Top level modules:
+	reg_file_cell
+
+} {} {}} D:/TKHDL/Squared_Root/AU2_pipeline.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Squared_Root/AU2_pipeline.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module AU2_pipeline
+
+Top level modules:
+	AU2_pipeline
+
+} {} {}} D:/TKHDL/Squared_Root/R1_sel.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Squared_Root/R1_sel.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module R1_sel
+
+Top level modules:
+	R1_sel
+
+} {} {}} D:/TKHDL/Squared_Root/Datapath.v {0 {vlog -work work -vopt -stats=none D:/TKHDL/Squared_Root/Datapath.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module Datapath
+** Error: (vlog-13069) D:/TKHDL/Squared_Root/Datapath.v(2): near "AU1_tri": syntax error, unexpected IDENTIFIER, expecting ')'.
+
+} {4.0 5.0} {}} D:/TKHDL/Squared_Root/Reg_Delay_3b.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Squared_Root/Reg_Delay_3b.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module Reg_Delay_3b
+
+Top level modules:
+	Reg_Delay_3b
+
+} {} {}} D:/TKHDL/Squared_Root/SquaredRoot.v {0 {vlog -work work -vopt -stats=none D:/TKHDL/Squared_Root/SquaredRoot.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module sqrt_int
+** Error: (vlog-13069) D:/TKHDL/Squared_Root/SquaredRoot.v(2): near "clk": syntax error, unexpected IDENTIFIER, expecting ')'.
+
+} {4.0 5.0} {}} D:/TKHDL/Squared_Root/adder1.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Squared_Root/adder1.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module adder1
+
+Top level modules:
+	adder1
+
+} {} {}} D:/TKHDL/Squared_Root/xor_mux.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Squared_Root/xor_mux.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module xor_mux
+
+Top level modules:
+	xor_mux
+
+} {} {}} D:/TKHDL/Squared_Root/Reg_Delay_5b.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Squared_Root/Reg_Delay_5b.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module Reg_Delay_5b
+
+Top level modules:
+	Reg_Delay_5b
+
+} {} {}} D:/TKHDL/Squared_Root/and_bus.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Squared_Root/and_bus.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module and_bus
+
+Top level modules:
+	and_bus
+
+} {} {}} D:/TKHDL/Squared_Root/AU1_pipeline.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Squared_Root/AU1_pipeline.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module AU1_pipeline
+
+Top level modules:
+	AU1_pipeline
+
+} {} {}} D:/TKHDL/Squared_Root/curr_state.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Squared_Root/curr_state.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module curr_state
+
+Top level modules:
+	curr_state
+
+} {} {}} D:/TKHDL/Squared_Root/edge_dff.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Squared_Root/edge_dff.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module edge_dff
+
+Top level modules:
+	edge_dff
+
+} {} {}} D:/TKHDL/Squared_Root/Full_Sub.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Squared_Root/Full_Sub.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module Full_Sub
+
+Top level modules:
+	Full_Sub
+
+} {} {}} D:/TKHDL/Squared_Root/shift_right_1b.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Squared_Root/shift_right_1b.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module shift_right_1b
+
+Top level modules:
+	shift_right_1b
+
+} {} {}} D:/TKHDL/Squared_Root/Register_5b_loadEn.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Squared_Root/Register_5b_loadEn.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module Register_5b_loadEn
+
+Top level modules:
+	Register_5b_loadEn
+
+} {} {}} D:/TKHDL/Squared_Root/reg_5b_load_en.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Squared_Root/reg_5b_load_en.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module reg_5b_load_en
+
+Top level modules:
+	reg_5b_load_en
+
+} {} {}} D:/TKHDL/Squared_Root/mux2_1b.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Squared_Root/mux2_1b.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module mux2_1b
+
+Top level modules:
+	mux2_1b
+
+} {} {}} D:/TKHDL/Squared_Root/shift_right_3b.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Squared_Root/shift_right_3b.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module shift_right_3b
+
+Top level modules:
+	shift_right_3b
+
+} {} {}} D:/TKHDL/Squared_Root/Sub_5b.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Squared_Root/Sub_5b.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module Sub_5b
+
+Top level modules:
+	Sub_5b
+
+} {} {}} D:/TKHDL/Squared_Root/Full_Adder_5b.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Squared_Root/Full_Adder_5b.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module Full_Adder_5b
+
+Top level modules:
+	Full_Adder_5b
+
+} {} {}} D:/TKHDL/Squared_Root/Control.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Squared_Root/Control.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module next_state
+
+Top level modules:
+	next_state
+
+} {} {}}

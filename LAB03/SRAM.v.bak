@@ -1,0 +1,9 @@
+module SRAM(WriteEn, ReadEn, clk, ReadData);
+reg [31:0] Address [31:0];
+reg [31:0] WriteData;
+input WriteEn, ReadEn, clk;
+output reg [31:0] ReadData;
+
+always @ (posedge)
+
+endmodule

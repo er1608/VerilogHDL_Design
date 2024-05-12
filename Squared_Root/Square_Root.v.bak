@@ -1,0 +1,6 @@
+module Square_Root(In1, In2, clk, start, out);
+	input [4:0] In1, In2;
+	output [4:0] out;
+	input clk, start;
+	
+endmodule

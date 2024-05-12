@@ -1,0 +1,167 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Adder_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/LAB01 {D:/TKHDL/LAB01/Adder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Adder
+# 
+# Top level modules:
+# 	Adder
+# 
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/LAB01 {D:/TKHDL/LAB01/Testbench.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Testbench
+# 
+# Top level modules:
+# 	Testbench
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  Testbench
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps Testbench 
+# Loading work.Testbench
+# Loading work.Adder
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Expected result:  0 .Simulation result:  z --> FAIL
+# Expected result:  1 .Simulation result:  z --> FAIL
+# Expected result:  2 .Simulation result:  z --> FAIL
+# Expected result:  3 .Simulation result:  z --> FAIL
+# Expected result:  4 .Simulation result:  z --> FAIL
+# Expected result:  5 .Simulation result:  z --> FAIL
+# Expected result:  6 .Simulation result:  z --> FAIL
+# Expected result:  7 .Simulation result:  z --> FAIL
+# Expected result:  1 .Simulation result:  z --> FAIL
+# Expected result:  2 .Simulation result:  z --> FAIL
+# Expected result:  3 .Simulation result:  z --> FAIL
+# Expected result:  0 .Simulation result:  z --> FAIL
+# Expected result:  5 .Simulation result:  z --> FAIL
+# Expected result:  6 .Simulation result:  z --> FAIL
+# Expected result:  7 .Simulation result:  z --> FAIL
+# Expected result:  4 .Simulation result:  z --> FAIL
+# Expected result:  2 .Simulation result:  z --> FAIL
+# Expected result:  3 .Simulation result:  z --> FAIL
+# Expected result:  4 .Simulation result:  z --> FAIL
+# Expected result:  5 .Simulation result:  z --> FAIL
+# Expected result:  6 .Simulation result:  z --> FAIL
+# Expected result:  7 .Simulation result:  z --> FAIL
+# Expected result:  8 .Simulation result:  z --> FAIL
+# Expected result:  9 .Simulation result:  z --> FAIL
+# Expected result:  3 .Simulation result:  z --> FAIL
+# Expected result:  0 .Simulation result:  z --> FAIL
+# Expected result:  5 .Simulation result:  z --> FAIL
+# Expected result:  6 .Simulation result:  z --> FAIL
+# Expected result:  7 .Simulation result:  z --> FAIL
+# Expected result:  4 .Simulation result:  z --> FAIL
+# Expected result:  9 .Simulation result:  z --> FAIL
+# Expected result: 10 .Simulation result:  z --> FAIL
+# Expected result:  4 .Simulation result:  z --> FAIL
+# Expected result:  5 .Simulation result:  z --> FAIL
+# Expected result:  6 .Simulation result:  z --> FAIL
+# Expected result:  7 .Simulation result:  z --> FAIL
+# Expected result:  8 .Simulation result:  z --> FAIL
+# Expected result:  9 .Simulation result:  z --> FAIL
+# Expected result: 10 .Simulation result:  z --> FAIL
+# Expected result: 11 .Simulation result:  z --> FAIL
+# Expected result:  5 .Simulation result:  z --> FAIL
+# Expected result:  6 .Simulation result:  z --> FAIL
+# Expected result:  7 .Simulation result:  z --> FAIL
+# Expected result:  4 .Simulation result:  z --> FAIL
+# Expected result:  9 .Simulation result:  z --> FAIL
+# Expected result: 10 .Simulation result:  z --> FAIL
+# Expected result: 11 .Simulation result:  z --> FAIL
+# Expected result:  8 .Simulation result:  z --> FAIL
+# Expected result:  6 .Simulation result:  z --> FAIL
+# Expected result:  7 .Simulation result:  z --> FAIL
+# Expected result:  8 .Simulation result:  z --> FAIL
+# Expected result:  9 .Simulation result:  z --> FAIL
+# Expected result: 10 .Simulation result:  z --> FAIL
+# Expected result: 11 .Simulation result:  z --> FAIL
+# Expected result: 12 .Simulation result:  z --> FAIL
+# Expected result: 13 .Simulation result:  z --> FAIL
+# Expected result:  7 .Simulation result:  z --> FAIL
+# Expected result:  4 .Simulation result:  z --> FAIL
+# Expected result:  9 .Simulation result:  z --> FAIL
+# Expected result: 10 .Simulation result:  z --> FAIL
+# Expected result: 11 .Simulation result:  z --> FAIL
+# Expected result:  8 .Simulation result:  z --> FAIL
+# Expected result: 13 .Simulation result:  z --> FAIL
+# Expected result: 14 .Simulation result:  z --> FAIL
+# Expected result:  1 .Simulation result:  z --> FAIL
+# Expected result:  2 .Simulation result:  z --> FAIL
+# Expected result:  3 .Simulation result:  z --> FAIL
+# Expected result:  4 .Simulation result:  z --> FAIL
+# Expected result:  5 .Simulation result:  z --> FAIL
+# Expected result:  6 .Simulation result:  z --> FAIL
+# Expected result:  7 .Simulation result:  z --> FAIL
+# Expected result:  8 .Simulation result:  z --> FAIL
+# Expected result:  2 .Simulation result:  z --> FAIL
+# Expected result:  3 .Simulation result:  z --> FAIL
+# Expected result:  4 .Simulation result:  z --> FAIL
+# Expected result:  1 .Simulation result:  z --> FAIL
+# Expected result:  6 .Simulation result:  z --> FAIL
+# Expected result:  7 .Simulation result:  z --> FAIL
+# Expected result:  8 .Simulation result:  z --> FAIL
+# Expected result:  5 .Simulation result:  z --> FAIL
+# Expected result:  3 .Simulation result:  z --> FAIL
+# Expected result:  4 .Simulation result:  z --> FAIL
+# Expected result:  5 .Simulation result:  z --> FAIL
+# Expected result:  6 .Simulation result:  z --> FAIL
+# Expected result:  7 .Simulation result:  z --> FAIL
+# Expected result:  8 .Simulation result:  z --> FAIL
+# Expected result:  9 .Simulation result:  z --> FAIL
+# Expected result: 10 .Simulation result:  z --> FAIL
+# Expected result:  4 .Simulation result:  z --> FAIL
+# Expected result:  1 .Simulation result:  z --> FAIL
+# Expected result:  6 .Simulation result:  z --> FAIL
+# Expected result:  7 .Simulation result:  z --> FAIL
+# Expected result:  8 .Simulation result:  z --> FAIL
+# Expected result:  5 .Simulation result:  z --> FAIL
+# Expected result: 10 .Simulation result:  z --> FAIL
+# Expected result: 11 .Simulation result:  z --> FAIL
+# Expected result:  5 .Simulation result:  z --> FAIL
+# Expected result:  6 .Simulation result:  z --> FAIL
+# Expected result:  7 .Simulation result:  z --> FAIL
+# Expected result:  8 .Simulation result:  z --> FAIL
+# Expected result:  9 .Simulation result:  z --> FAIL
+# Expected result: 10 .Simulation result:  z --> FAIL
+# Expected result: 11 .Simulation result:  z --> FAIL
+# Expected result: 12 .Simulation result:  z --> FAIL
+# Expected result:  6 .Simulation result:  z --> FAIL
+# Expected result:  7 .Simulation result:  z --> FAIL
+# Expected result:  8 .Simulation result:  z --> FAIL
+# Expected result:  5 .Simulation result:  z --> FAIL
+# Expected result: 10 .Simulation result:  z --> FAIL
+# Expected result: 11 .Simulation result:  z --> FAIL
+# Expected result: 12 .Simulation result:  z --> FAIL
+# Expected result:  9 .Simulation result:  z --> FAIL
+# Expected result:  7 .Simulation result:  z --> FAIL
+# Expected result:  8 .Simulation result:  z --> FAIL
+# Expected result:  9 .Simulation result:  z --> FAIL
+# Expected result: 10 .Simulation result:  z --> FAIL
+# Expected result: 11 .Simulation result:  z --> FAIL
+# Expected result: 12 .Simulation result:  z --> FAIL
+# Expected result: 13 .Simulation result:  z --> FAIL
+# Expected result: 14 .Simulation result:  z --> FAIL
+# Expected result:  8 .Simulation result:  z --> FAIL
+# Expected result:  5 .Simulation result:  z --> FAIL
+# Expected result: 10 .Simulation result:  z --> FAIL
+# Expected result: 11 .Simulation result:  z --> FAIL
+# Expected result: 12 .Simulation result:  z --> FAIL
+# Expected result:  9 .Simulation result:  z --> FAIL
+# Expected result: 14 .Simulation result:  z --> FAIL
+# Break in Module Testbench at D:/TKHDL/LAB01/Testbench.v line 9
+# Simulation Breakpoint: Break in Module Testbench at D:/TKHDL/LAB01/Testbench.v line 9
+# MACRO ./Adder_run_msim_rtl_verilog.do PAUSED at line 17

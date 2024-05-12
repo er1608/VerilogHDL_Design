@@ -1,0 +1,14 @@
+`timesclae 1ns / 1psmodule Testbench();
+reg clk, RegWrite, ALUSrc, MemWrite, MemRead, MemToReg, RegDst;
+reg [31:0] Inst;
+wire is0;
+reg [2:0] ALUcontrol;
+wire [31:0] ReadData;
+
+DATAPATH DB(clk, RegWrite, ALUSrc, MemWrite, MemRead, MemToReg, RegDst, Inst, is0, ReadData, ALUcontrol);
+initial begin
+
+
+end
+
+endmodule

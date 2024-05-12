@@ -1,0 +1,31 @@
+`timescale 1ns/100ps
+module Testbench();
+ reg clk, rst, I;
+ wire out;
+ FSM fsm_tb (.o(out), .I(I), .clk(clk), .rst(rst));
+ initial begin
+  clk = 0;
+  rst = 0;
+  I = 0;
+  #10
+  rst = 1;
+  #10
+  rst = 0;
+  I = 0;
+  #10
+  rst = 0;
+  I = 1;
+  #10
+  rst = 0;
+  I = 0;
+  #10
+  rst = 0;
+  I = 1;
+  #10
+  rst = 0;
+  I = 0;
+ end
+ 
+ always #5 clk = ~clk;
+ initial #4000 $stop;
+endmodule

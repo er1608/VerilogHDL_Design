@@ -1,0 +1,29 @@
+module dff(
+  output reg Q,
+  input wire D,
+  input wire clk,
+  input wire reset
+);
+
+  always @(posedge clk or posedge reset) begin
+    if (reset) begin
+      Q <= 1'b0; 
+    end else begin
+      Q <= D; 
+    end
+  end
+
+endmodule
+
+module MC(select, I0, I1, I2, I3, W, O0, O1, O2, O3, clear);
+ output O0, O1, O2, O3;
+ input I0, I1, I2, I3, select, W, clear = 1;
+ 
+ wire clk;
+ and(clk, select, w);
+
+ dff dff0(O0, I0, clk, clear);
+ dff dff1(O1, I1, clk, clear);
+ dff dff2(O2, I2, clk, clear);
+ dff dff3(O3, I3, clk, clear);
+endmodule

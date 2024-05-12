@@ -1,0 +1,205 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do SquaredRoot_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/Squared_Root {D:/TKHDL/Squared_Root/Datapath.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Datapath
+# 
+# Top level modules:
+# 	Datapath
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/Squared_Root {D:/TKHDL/Squared_Root/Control.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Control
+# 
+# Top level modules:
+# 	Control
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/Squared_Root {D:/TKHDL/Squared_Root/Control_Output.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Control_Output
+# 
+# Top level modules:
+# 	Control_Output
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/Squared_Root {D:/TKHDL/Squared_Root/curr_state.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module curr_state
+# 
+# Top level modules:
+# 	curr_state
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/Squared_Root {D:/TKHDL/Squared_Root/next_state.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module next_state
+# 
+# Top level modules:
+# 	next_state
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/Squared_Root {D:/TKHDL/Squared_Root/mux2_1b.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux2_1b
+# 
+# Top level modules:
+# 	mux2_1b
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/Squared_Root {D:/TKHDL/Squared_Root/mux2_5b.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux2_5b
+# 
+# Top level modules:
+# 	mux2_5b
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/Squared_Root {D:/TKHDL/Squared_Root/reg_5b_load_en.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module reg_5b_load_en
+# 
+# Top level modules:
+# 	reg_5b_load_en
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/Squared_Root {D:/TKHDL/Squared_Root/edge_dff.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_dff
+# 
+# Top level modules:
+# 	edge_dff
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/Squared_Root {D:/TKHDL/Squared_Root/shift_right_1b.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module shift_right_1b
+# 
+# Top level modules:
+# 	shift_right_1b
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/Squared_Root {D:/TKHDL/Squared_Root/shift_right_3b.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module shift_right_3b
+# 
+# Top level modules:
+# 	shift_right_3b
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/Squared_Root {D:/TKHDL/Squared_Root/Sub_5b.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Sub_5b
+# 
+# Top level modules:
+# 	Sub_5b
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/Squared_Root {D:/TKHDL/Squared_Root/AU1_pipeline.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module AU1_pipeline
+# 
+# Top level modules:
+# 	AU1_pipeline
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/Squared_Root {D:/TKHDL/Squared_Root/adder1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module adder1
+# 
+# Top level modules:
+# 	adder1
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/Squared_Root {D:/TKHDL/Squared_Root/Full_Adder_5b.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Full_Adder_5b
+# 
+# Top level modules:
+# 	Full_Adder_5b
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/Squared_Root {D:/TKHDL/Squared_Root/AU2_pipeline.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module AU2_pipeline
+# 
+# Top level modules:
+# 	AU2_pipeline
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/Squared_Root {D:/TKHDL/Squared_Root/ABS.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ABS
+# 
+# Top level modules:
+# 	ABS
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/Squared_Root {D:/TKHDL/Squared_Root/MIN.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module MIN
+# 
+# Top level modules:
+# 	MIN
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/Squared_Root {D:/TKHDL/Squared_Root/MAX.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module MAX
+# 
+# Top level modules:
+# 	MAX
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/Squared_Root {D:/TKHDL/Squared_Root/Sub5b_select.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Sub5b_select
+# 
+# Top level modules:
+# 	Sub5b_select
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/Squared_Root {D:/TKHDL/Squared_Root/Full_Adder_5b_select.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Full_Adder_5b_select
+# 
+# Top level modules:
+# 	Full_Adder_5b_select
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/Squared_Root {D:/TKHDL/Squared_Root/decode2_4.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module decode2_4
+# 
+# Top level modules:
+# 	decode2_4
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/Squared_Root {D:/TKHDL/Squared_Root/BUF5bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module BUF5bit
+# 
+# Top level modules:
+# 	BUF5bit
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/Squared_Root {D:/TKHDL/Squared_Root/Square_Root.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Square_Root
+# 
+# Top level modules:
+# 	Square_Root
+# 
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/Squared_Root {D:/TKHDL/Squared_Root/Testbench.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Testbench
+# 
+# Top level modules:
+# 	Testbench
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  Testbench
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps Testbench 
+# Loading work.Testbench
+# Loading work.Square_Root
+# Loading work.Control
+# Loading work.next_state
+# Loading work.curr_state
+# Loading work.edge_dff
+# Loading work.Control_Output
+# Loading work.Datapath
+# Loading work.reg_5b_load_en
+# Loading work.mux2_5b
+# Loading work.mux2_1b
+# Loading work.BUF5bit
+# Loading work.AU1_pipeline
+# Loading work.decode2_4
+# Loading work.ABS
+# Loading work.Sub_5b
+# Loading work.Full_Adder_5b
+# Loading work.adder1
+# Loading work.MIN
+# Loading work.MAX
+# Loading work.shift_right_1b
+# Loading work.shift_right_3b
+# Loading work.AU2_pipeline
+# Loading work.Full_Adder_5b_select
+# Loading work.Sub5b_select
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $finish    : D:/TKHDL/Squared_Root/Testbench.v(30)
+#    Time: 420 ns  Iteration: 0  Instance: /Testbench
+# 1
+# Break in Module Testbench at D:/TKHDL/Squared_Root/Testbench.v line 30
+# Simulation Breakpoint: 1
+# Break in Module Testbench at D:/TKHDL/Squared_Root/Testbench.v line 30
+# MACRO ./SquaredRoot_run_msim_rtl_verilog.do PAUSED at line 40

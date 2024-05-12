@@ -1,0 +1,47 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\TKHDL\LAB03\simulation\modelsim
+vSRAM
+I3Q=l;Z?@3kiaYeGJ^=2Z:1
+VNENjAekUW5zOlj8Gb`@;j0
+Z1 dD:\TKHDL\LAB03\simulation\modelsim
+w1700394259
+8D:/TKHDL/LAB03/SRAM.v
+FD:/TKHDL/LAB03/SRAM.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+n@s@r@a@m
+!i10b 1
+!s100 U3:n48Ae5eeL6a2WQT:SQ3
+!s85 0
+!s108 1700397430.995000
+!s107 D:/TKHDL/LAB03/SRAM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/TKHDL/LAB03|D:/TKHDL/LAB03/SRAM.v|
+!s101 -O0
+Z4 !s92 -vlog01compat -work work +incdir+D:/TKHDL/LAB03 -O0
+vTestbench
+!i10b 1
+!s100 BU;j29MY1;7NV@[<F0c=]0
+IYQoYmP1gFVABCc<gCQBP>2
+VGdUiEZgaMiVEi@bgHJeE13
+R1
+w1700397355
+8D:/TKHDL/LAB03/Testbench.v
+FD:/TKHDL/LAB03/Testbench.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1700397431.078000
+!s107 D:/TKHDL/LAB03/Testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/TKHDL/LAB03|D:/TKHDL/LAB03/Testbench.v|
+!s101 -O0
+R3
+R4
+n@testbench

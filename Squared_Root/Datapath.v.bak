@@ -1,0 +1,4 @@
+module Datapath(out, R1_tri, R2_tri, R1_e, R2_e, AU1_op, In1_tri, In2_tri, clk, In1, In2
+					AU1_tri, AU1_tri1, shift3_tri, R3_e, R4_e, R5_e, R4_tri, R5_tri, AU2_op, AU2_tri, done, S);
+	output [4:0] out;
+	

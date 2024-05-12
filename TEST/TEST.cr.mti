@@ -1,0 +1,22 @@
+D:/TKHDL/TEST/ModelSimTest.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/TEST/ModelSimTest.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module ModelSimTest
+
+Top level modules:
+	ModelSimTest
+
+} {} {}} D:/TKHDL/TEST/Testbench.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/TEST/Testbench.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module Testbench
+
+Top level modules:
+	Testbench
+
+} {} {}} D:/TKHDL/TEST/ModelSimTest.vo {1 {vlog -work work -vopt -stats=none D:/TKHDL/TEST/ModelSimTest.vo
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module ModelSimTest
+
+Top level modules:
+	ModelSimTest
+
+} {} {}}

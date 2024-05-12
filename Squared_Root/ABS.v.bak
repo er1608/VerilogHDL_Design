@@ -1,0 +1,8 @@
+module ABS(A, out);
+	input [4:0] A;
+	output [4:0] out;
+	wire A1, z;
+	parameter z = 0;
+	Sub_5b sub(A1, z, A);
+	mux2_5b mux(out, A1, A, Sel);
+endmodule

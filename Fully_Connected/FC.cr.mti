@@ -1,0 +1,358 @@
+D:/TKHDL/Fully_Connected/floatAdd_TB.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/floatAdd_TB.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module floatAdd_TB
+
+Top level modules:
+	floatAdd_TB
+
+} {} {}} D:/TKHDL/Fully_Connected/HyperbolicTangent16_TB.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/HyperbolicTangent16_TB.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module HyperBolicTangent16_TB
+
+Top level modules:
+	HyperBolicTangent16_TB
+
+} {} {}} D:/TKHDL/Fully_Connected/floatAdd.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/floatAdd.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module floatAdd
+
+Top level modules:
+	floatAdd
+
+} {} {}} D:/TKHDL/Fully_Connected/softmax_1.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/softmax_1.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module softmax1
+
+Top level modules:
+	softmax1
+
+} {} {}} D:/TKHDL/Fully_Connected/AvgPoolMulti_tb.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/AvgPoolMulti_tb.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module AvgPoolMulti_tb
+
+Top level modules:
+	AvgPoolMulti_tb
+
+} {} {}} D:/TKHDL/Fully_Connected/weightMemory.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/weightMemory.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module weightMemory
+
+Top level modules:
+	weightMemory
+
+} {} {}} D:/TKHDL/Fully_Connected/RFselector.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/RFselector.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module RFselector
+
+Top level modules:
+	RFselector
+
+} {} {}} D:/TKHDL/Fully_Connected/processingElement16_TB.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/processingElement16_TB.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module processingElement16_TB
+
+Top level modules:
+	processingElement16_TB
+
+} {} {}} D:/TKHDL/Fully_Connected/floatAdd16.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/floatAdd16.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module floatAdd16
+
+Top level modules:
+	floatAdd16
+
+} {} {}} D:/TKHDL/Fully_Connected/exponent_tb.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/exponent_tb.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module exponent_tb
+
+Top level modules:
+	exponent_tb
+
+} {} {}} D:/TKHDL/Fully_Connected/convLayerMulti.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/convLayerMulti.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module convLayerMulti
+
+Top level modules:
+	convLayerMulti
+
+} {} {}} D:/TKHDL/Fully_Connected/floatMult.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/floatMult.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module floatMult
+
+Top level modules:
+	floatMult
+
+} {} {}} D:/TKHDL/Fully_Connected/floatReciprocal.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/floatReciprocal.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module floatReciprocal
+
+Top level modules:
+	floatReciprocal
+
+} {} {}} D:/TKHDL/Fully_Connected/softmax_2.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/softmax_2.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module softmax2
+
+Top level modules:
+	softmax2
+
+} {} {}} D:/TKHDL/Fully_Connected/processingElement_TB.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/processingElement_TB.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module processingElement_TB
+
+Top level modules:
+	processingElement_TB
+
+} {} {}} D:/TKHDL/Fully_Connected/layer.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/layer.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module layer
+
+Top level modules:
+	layer
+
+} {} {}} D:/TKHDL/Fully_Connected/AvgUnit.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/AvgUnit.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module AvgUnit
+
+Top level modules:
+	AvgUnit
+
+} {} {}} D:/TKHDL/Fully_Connected/convUnit.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/convUnit.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module convUnit
+
+Top level modules:
+	convUnit
+
+} {} {}} D:/TKHDL/Fully_Connected/HyperbolicTangent_TB.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/HyperbolicTangent_TB.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module HyperBolicTangent_TB
+
+Top level modules:
+	HyperBolicTangent_TB
+
+} {} {}} D:/TKHDL/Fully_Connected/floatReciprocal_tb.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/floatReciprocal_tb.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module floatReciprocal_tb
+
+Top level modules:
+	floatReciprocal_tb
+
+} {} {}} D:/TKHDL/Fully_Connected/processingElement.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/processingElement.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module processingElement
+
+Top level modules:
+	processingElement
+
+} {} {}} D:/TKHDL/Fully_Connected/activationFunction.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/activationFunction.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module activationFunction
+
+Top level modules:
+	activationFunction
+
+} {} {}} D:/TKHDL/Fully_Connected/softmax.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/softmax.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module softmax
+
+Top level modules:
+	softmax
+
+} {} {}} D:/TKHDL/Fully_Connected/AvgPoolMulti_tb2.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/AvgPoolMulti_tb2.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module AvgPoolMulti_tb2
+
+Top level modules:
+	AvgPoolMulti_tb2
+
+} {} {}} {D:/TKHDL/Fully_Connected/UsingTheTanh16_TB .v} {1 {vlog -work work -vopt -stats=none {D:/TKHDL/Fully_Connected/UsingTheTanh16_TB .v}
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module UsingTheTanh16_TB
+
+Top level modules:
+	UsingTheTanh16_TB
+
+} {} {}} D:/TKHDL/Fully_Connected/softmax_tb.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/softmax_tb.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module softmax_tb
+
+Top level modules:
+	softmax_tb
+
+} {} {}} D:/TKHDL/Fully_Connected/IntegrationConvPart.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/IntegrationConvPart.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module integrationFC
+
+Top level modules:
+	integrationFC
+
+} {} {}} D:/TKHDL/Fully_Connected/UsingTheTanh16.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/UsingTheTanh16.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module UsingTheTanh16
+
+Top level modules:
+	UsingTheTanh16
+
+} {} {}} D:/TKHDL/Fully_Connected/exponent.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/exponent.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module exponent
+
+Top level modules:
+	exponent
+
+} {} {}} D:/TKHDL/Fully_Connected/layer_TB.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/layer_TB.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module layer_TB
+
+Top level modules:
+	layer_TB
+
+} {} {}} D:/TKHDL/Fully_Connected/UsingTheTanh.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/UsingTheTanh.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module UsingTheTanh
+
+Top level modules:
+	UsingTheTanh
+
+} {} {}} D:/TKHDL/Fully_Connected/floatMult_TB.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/floatMult_TB.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module floatMult_TB
+
+Top level modules:
+	floatMult_TB
+
+} {} {}} D:/TKHDL/Fully_Connected/IntegrationFC.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/IntegrationFC.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module IntegrationFC
+
+Top level modules:
+	IntegrationFC
+
+} {} {}} D:/TKHDL/Fully_Connected/processingElement16.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/processingElement16.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module processingElement16
+
+Top level modules:
+	processingElement16
+
+} {} {}} D:/TKHDL/Fully_Connected/UsingTheTanh_TB.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/UsingTheTanh_TB.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module UsingTheTanh_TB
+
+Top level modules:
+	UsingTheTanh_TB
+
+} {} {}} D:/TKHDL/Fully_Connected/AvgPoolMulti.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/AvgPoolMulti.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module AvgPoolMulti
+
+Top level modules:
+	AvgPoolMulti
+
+} {} {}} D:/TKHDL/Fully_Connected/floatMult16_TB.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/floatMult16_TB.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module floatMult16_TB
+
+Top level modules:
+	floatMult16_TB
+
+} {} {}} D:/TKHDL/Fully_Connected/activationFunction_TB.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/activationFunction_TB.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module activationFunction_TB
+
+Top level modules:
+	activationFunction_TB
+
+} {} {}} D:/TKHDL/Fully_Connected/convLayerSingle.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/convLayerSingle.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module convLayerSingle
+
+Top level modules:
+	convLayerSingle
+
+} {} {}} D:/TKHDL/Fully_Connected/floatMult16.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/floatMult16.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module floatMult16
+
+Top level modules:
+	floatMult16
+
+} {} {}} D:/TKHDL/Fully_Connected/HyperBolicTangent16.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/HyperBolicTangent16.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module HyperBolicTangent16
+
+Top level modules:
+	HyperBolicTangent16
+
+} {} {}} D:/TKHDL/Fully_Connected/IntegrationFC_tb.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/IntegrationFC_tb.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module IntegrationFC_tb
+
+Top level modules:
+	IntegrationFC_tb
+
+} {} {}} D:/TKHDL/Fully_Connected/HyperBolicTangent.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/HyperBolicTangent.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module HyperBolicTangent
+
+Top level modules:
+	HyperBolicTangent
+
+} {} {}} D:/TKHDL/Fully_Connected/AvgPoolSingle.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/AvgPoolSingle.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module avgPoolSingle
+
+Top level modules:
+	avgPoolSingle
+
+} {} {}} D:/TKHDL/Fully_Connected/convLayerMulti_TB.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/convLayerMulti_TB.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module convLayerMulti_TB
+
+Top level modules:
+	convLayerMulti_TB
+
+} {} {}} D:/TKHDL/Fully_Connected/floatAdd16_TB.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/floatAdd16_TB.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module floatAdd16_TB
+
+Top level modules:
+	floatAdd16_TB
+
+} {} {}} D:/TKHDL/Fully_Connected/weightMemory_TB.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/weightMemory_TB.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module weightMemroy_TB
+
+Top level modules:
+	weightMemroy_TB
+
+} {} {}} D:/TKHDL/Fully_Connected/AvgPoolSingle_tb.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/AvgPoolSingle_tb.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module AvgPoolSingle_TB
+
+Top level modules:
+	AvgPoolSingle_TB
+
+} {} {}} D:/TKHDL/Fully_Connected/convLayerSingle_TB.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/convLayerSingle_TB.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module convLayerSingle_TB
+
+Top level modules:
+	convLayerSingle_TB
+
+} {} {}} D:/TKHDL/Fully_Connected/convUnit_TB.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/convUnit_TB.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module convUnit_TB
+
+Top level modules:
+	convUnit_TB
+
+} {} {}} D:/TKHDL/Fully_Connected/AvgUnit_tb.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/Fully_Connected/AvgUnit_tb.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module AvgUnit_tb
+
+Top level modules:
+	AvgUnit_tb
+
+} {} {}}

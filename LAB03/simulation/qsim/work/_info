@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\TKHDL\LAB03\simulation\qsim
+vSRAM
+Z1 !s100 9_m91eH<0]jWfIARIa0Hd1
+Z2 I[g5g>11CnE64ZK51Ei>dF1
+Z3 VNENjAekUW5zOlj8Gb`@;j0
+Z4 dD:\TKHDL\LAB03\simulation\qsim
+Z5 w1700145339
+Z6 8LAB03.vo
+Z7 FLAB03.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|LAB03.vo|
+Z10 o-work work -O0
+Z11 n@s@r@a@m
+!i10b 1
+!s85 0
+Z12 !s108 1700145340.496000
+Z13 !s107 LAB03.vo|
+!s101 -O0
+vSRAM_vlg_check_tst
+!i10b 1
+Z14 !s100 TaHQBEW2fj^IZ>[j`mSEK1
+Z15 IzfEZ]]?jZ:a1SYm2iO<_N1
+Z16 V3H8H]2_=KoNe>iLeDN2M_0
+R4
+Z17 w1700145337
+Z18 8LAB03.vt
+Z19 FLAB03.vt
+L0 65
+R8
+r1
+!s85 0
+31
+Z20 !s108 1700145340.622000
+Z21 !s107 LAB03.vt|
+Z22 !s90 -work|work|LAB03.vt|
+!s101 -O0
+R10
+Z23 n@s@r@a@m_vlg_check_tst
+vSRAM_vlg_sample_tst
+!i10b 1
+Z24 !s100 ZZ2nHY7P_k88CNnXgXYOY3
+Z25 IEXlRj6M@n<I;i7HBNG2Am0
+Z26 VGFJfDVGUV27PaTT`PNgU_3
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@s@r@a@m_vlg_sample_tst
+vSRAM_vlg_vec_tst
+!i10b 1
+!s100 LERWG`iIEhNR`WJ0XJ2]d2
+IL59^N9^HFXdj[bP6lMzKY0
+Z28 Vfd_CdN?iooci21^Q`aLVV0
+R4
+R17
+R18
+R19
+Z29 L0 717
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z30 n@s@r@a@m_vlg_vec_tst

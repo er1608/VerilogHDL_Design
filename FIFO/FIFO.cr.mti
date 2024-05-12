@@ -1,0 +1,69 @@
+D:/TKHDL/FIFO/mux2_to_1.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/FIFO/mux2_to_1.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module mux2_to_1
+
+Top level modules:
+	mux2_to_1
+
+} {} {}} D:/TKHDL/COMPONENT/fulladd.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/COMPONENT/fulladd.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module fulladd
+
+Top level modules:
+	fulladd
+
+} {} {}} D:/TKHDL/FIFO/Testbench.v {1 {vlog -work work -vopt -stats=none {D:\TKHDL\FIFO\Testbench.v}
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module Testbench
+
+Top level modules:
+	Testbench
+
+} {} {}} D:/TKHDL/FIFO/CMP.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/FIFO/CMP.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module CMP
+
+Top level modules:
+	CMP
+
+} {} {}} D:/TKHDL/FIFO/edge_dff.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/FIFO/edge_dff.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module edge_dff
+
+Top level modules:
+	edge_dff
+
+} {} {}} D:/TKHDL/FIFO/MC.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/FIFO/MC.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module MC
+
+Top level modules:
+	MC
+
+} {} {}} D:/TKHDL/FIFO/counter.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/FIFO/counter.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module HA
+-- Compiling module counter
+
+Top level modules:
+	counter
+
+} {} {}} D:/TKHDL/FIFO/RAM.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/FIFO/RAM.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module decode2_4
+-- Compiling module RAM
+
+Top level modules:
+	RAM
+
+} {} {}} D:/TKHDL/FIFO/FIFO.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/FIFO/FIFO.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module FIFO
+
+Top level modules:
+	FIFO
+
+} {} {}} D:/TKHDL/FIFO/MAIN.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/FIFO/MAIN.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+
+} {} {}}

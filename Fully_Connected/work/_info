@@ -1,0 +1,1112 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/TKHDL/DO_AN
+vactivationFunction
+Z0 !s110 1706345308
+!i10b 1
+!s100 2F9bPihEU^NVEnd>6j;f41
+I]DYW6`G>WP>OTJjP=MMOU3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/TKHDL/Fully_Connected
+Z3 w1703082545
+8D:/TKHDL/Fully_Connected/activationFunction.v
+FD:/TKHDL/Fully_Connected/activationFunction.v
+L0 1
+Z4 OL;L;10.5;63
+r1
+!s85 0
+31
+Z5 !s108 1706345308.000000
+!s107 D:/TKHDL/Fully_Connected/activationFunction.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/activationFunction.v|
+!i113 0
+Z6 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 tCvgOpt 0
+nactivation@function
+vactivationFunction_TB
+R0
+!i10b 1
+!s100 Eg5F0Y]mS3:3i?zf15z^[3
+I8RHOzHV9_:TEK_0T9jDR32
+R1
+R2
+R3
+8D:/TKHDL/Fully_Connected/activationFunction_TB.v
+FD:/TKHDL/Fully_Connected/activationFunction_TB.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/TKHDL/Fully_Connected/activationFunction_TB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/activationFunction_TB.v|
+!i113 0
+R6
+R7
+nactivation@function_@t@b
+vAvgPoolMulti
+R0
+!i10b 1
+!s100 5I75zO[91>CJ@@hlaBf:>1
+IIj<c7@LFN]6@ejiaICQlD2
+R1
+R2
+R3
+8D:/TKHDL/Fully_Connected/AvgPoolMulti.v
+FD:/TKHDL/Fully_Connected/AvgPoolMulti.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/TKHDL/Fully_Connected/AvgPoolMulti.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/AvgPoolMulti.v|
+!i113 0
+R6
+R7
+n@avg@pool@multi
+vAvgPoolMulti_tb
+R0
+!i10b 1
+!s100 IJ`;nRFC_LE:NT?E`jVKF1
+IO_P@j??EmM`?AHf:OdYW93
+R1
+R2
+R3
+8D:/TKHDL/Fully_Connected/AvgPoolMulti_tb.v
+FD:/TKHDL/Fully_Connected/AvgPoolMulti_tb.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/TKHDL/Fully_Connected/AvgPoolMulti_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/AvgPoolMulti_tb.v|
+!i113 0
+R6
+R7
+n@avg@pool@multi_tb
+vAvgPoolMulti_tb2
+R0
+!i10b 1
+!s100 Weiei=CcZ>zo@`^PP9I^52
+I75Hn=CT<:nMW;Ec_0dKno0
+R1
+R2
+R3
+8D:/TKHDL/Fully_Connected/AvgPoolMulti_tb2.v
+FD:/TKHDL/Fully_Connected/AvgPoolMulti_tb2.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/TKHDL/Fully_Connected/AvgPoolMulti_tb2.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/AvgPoolMulti_tb2.v|
+!i113 0
+R6
+R7
+n@avg@pool@multi_tb2
+vavgPoolSingle
+Z8 !s110 1706345309
+!i10b 1
+!s100 [P5hA<_lI=>V2bROld0``2
+IVWTlOPKJbzGejN1T>QVcU0
+R1
+R2
+w1705915720
+8D:/TKHDL/Fully_Connected/AvgPoolSingle.v
+FD:/TKHDL/Fully_Connected/AvgPoolSingle.v
+L0 3
+R4
+r1
+!s85 0
+31
+Z9 !s108 1706345309.000000
+!s107 D:/TKHDL/Fully_Connected/AvgPoolSingle.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/AvgPoolSingle.v|
+!i113 0
+R6
+R7
+navg@pool@single
+vAvgPoolSingle_TB
+R8
+!i10b 1
+!s100 S^zl3iIh`PVaQ8mdcXQab0
+I]AMT<@d0c?TJToO`GLH8A2
+R1
+R2
+R3
+8D:/TKHDL/Fully_Connected/AvgPoolSingle_tb.v
+FD:/TKHDL/Fully_Connected/AvgPoolSingle_tb.v
+L0 3
+R4
+r1
+!s85 0
+31
+R9
+!s107 D:/TKHDL/Fully_Connected/AvgPoolSingle_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/AvgPoolSingle_tb.v|
+!i113 0
+R6
+R7
+n@avg@pool@single_@t@b
+vAvgUnit
+R8
+!i10b 1
+!s100 l9?<=@YF5<G6aTmn`VXKK3
+IMYEa1gZX:m7YWj9Rln`K^2
+R1
+R2
+R3
+8D:/TKHDL/Fully_Connected/AvgUnit.v
+FD:/TKHDL/Fully_Connected/AvgUnit.v
+L0 3
+R4
+r1
+!s85 0
+31
+R9
+!s107 D:/TKHDL/Fully_Connected/AvgUnit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/AvgUnit.v|
+!i113 0
+R6
+R7
+n@avg@unit
+vAvgUnit_tb
+R8
+!i10b 1
+!s100 0d6A`d4>NaWT0g>7OkS;K2
+I4g>DdR4jGj6N[^gRDGb=^1
+R1
+R2
+R3
+8D:/TKHDL/Fully_Connected/AvgUnit_tb.v
+FD:/TKHDL/Fully_Connected/AvgUnit_tb.v
+L0 3
+R4
+r1
+!s85 0
+31
+R9
+!s107 D:/TKHDL/Fully_Connected/AvgUnit_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/AvgUnit_tb.v|
+!i113 0
+R6
+R7
+n@avg@unit_tb
+vconvLayerMulti
+R8
+!i10b 1
+!s100 ]NoUF:1YBRbh>YBaM_cQ43
+IKl<_zL1GIO3FlV]H;9MjN0
+R1
+R2
+w1705915732
+8D:/TKHDL/Fully_Connected/convLayerMulti.v
+FD:/TKHDL/Fully_Connected/convLayerMulti.v
+L0 3
+R4
+r1
+!s85 0
+31
+R9
+!s107 D:/TKHDL/Fully_Connected/convLayerMulti.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/convLayerMulti.v|
+!i113 0
+R6
+R7
+nconv@layer@multi
+vconvLayerMulti_TB
+R8
+!i10b 1
+!s100 ^TS1U9Ngc6NTKAeWP?n;71
+Ii[_3QJB3ZGf2ZLk;[Xz;O1
+R1
+R2
+R3
+8D:/TKHDL/Fully_Connected/convLayerMulti_TB.v
+FD:/TKHDL/Fully_Connected/convLayerMulti_TB.v
+L0 3
+R4
+r1
+!s85 0
+31
+R9
+!s107 D:/TKHDL/Fully_Connected/convLayerMulti_TB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/convLayerMulti_TB.v|
+!i113 0
+R6
+R7
+nconv@layer@multi_@t@b
+vconvLayerSingle
+R8
+!i10b 1
+!s100 b_VE9j;>daCE=hjMI[l^j2
+IAV^CL0hb5o^mAP@5?RA4N3
+R1
+R2
+w1705915735
+8D:/TKHDL/Fully_Connected/convLayerSingle.v
+FD:/TKHDL/Fully_Connected/convLayerSingle.v
+L0 3
+R4
+r1
+!s85 0
+31
+R9
+!s107 D:/TKHDL/Fully_Connected/convLayerSingle.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/convLayerSingle.v|
+!i113 0
+R6
+R7
+nconv@layer@single
+vconvLayerSingle_TB
+R8
+!i10b 1
+!s100 4oTQACB63lhj>c=eX7G3T1
+I:dCJ=LMB1J<o>g@?hTn=A3
+R1
+R2
+R3
+8D:/TKHDL/Fully_Connected/convLayerSingle_TB.v
+FD:/TKHDL/Fully_Connected/convLayerSingle_TB.v
+L0 3
+R4
+r1
+!s85 0
+31
+R9
+!s107 D:/TKHDL/Fully_Connected/convLayerSingle_TB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/convLayerSingle_TB.v|
+!i113 0
+R6
+R7
+nconv@layer@single_@t@b
+vconvUnit
+Z10 !s110 1706345311
+!i10b 1
+!s100 AgL`Zl2Bo`V19hZlAbCM50
+I7P?Qm^fQbn9Vo:`hC;fMS0
+R1
+R2
+Z11 w1703082546
+8D:/TKHDL/Fully_Connected/convUnit.v
+FD:/TKHDL/Fully_Connected/convUnit.v
+L0 3
+R4
+r1
+!s85 0
+31
+Z12 !s108 1706345311.000000
+!s107 D:/TKHDL/Fully_Connected/convUnit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/convUnit.v|
+!i113 0
+R6
+R7
+nconv@unit
+vconvUnit_TB
+R10
+!i10b 1
+!s100 cI5@iVg@UDO]dbUGO@CKB1
+Iea;Q4h;^l4SO9Qo?fz_<A1
+R1
+R2
+R11
+8D:/TKHDL/Fully_Connected/convUnit_TB.v
+FD:/TKHDL/Fully_Connected/convUnit_TB.v
+L0 3
+R4
+r1
+!s85 0
+31
+R12
+!s107 D:/TKHDL/Fully_Connected/convUnit_TB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/convUnit_TB.v|
+!i113 0
+R6
+R7
+nconv@unit_@t@b
+vexponent
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 GQ`L]^iXgF@Hj9jCi4GJ53
+In8j3Zh]SY2iP=g=g^@S5M2
+R2
+R11
+8D:/TKHDL/Fully_Connected/exponent.v
+FD:/TKHDL/Fully_Connected/exponent.v
+L0 1
+R4
+R12
+!s107 D:/TKHDL/Fully_Connected/exponent.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/exponent.v|
+!i113 0
+R6
+R7
+vexponent_tb
+R10
+!i10b 1
+!s100 6U?QHcIIS5^fdo_n1`8R<1
+IM?QGQ71alV^YNjA<_ERFd0
+R1
+R2
+R11
+8D:/TKHDL/Fully_Connected/exponent_tb.v
+FD:/TKHDL/Fully_Connected/exponent_tb.v
+L0 2
+R4
+r1
+!s85 0
+31
+R12
+!s107 D:/TKHDL/Fully_Connected/exponent_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/exponent_tb.v|
+!i113 0
+R6
+R7
+vfloatAdd
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 M8jhDS^m<Xg:W;K>WYN6j1
+IZ^gl>_20ZGkgkU8?UDNi92
+R2
+R11
+8D:/TKHDL/Fully_Connected/floatAdd.v
+FD:/TKHDL/Fully_Connected/floatAdd.v
+L0 1
+R4
+R12
+!s107 D:/TKHDL/Fully_Connected/floatAdd.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/floatAdd.v|
+!i113 0
+R6
+R7
+nfloat@add
+vfloatAdd16
+R10
+!i10b 1
+!s100 K>aoaDR@dGGcTFkToPeK33
+IVzPW]f4<TZZ@lEYCQJT;X3
+R1
+R2
+R11
+8D:/TKHDL/Fully_Connected/floatAdd16.v
+FD:/TKHDL/Fully_Connected/floatAdd16.v
+L0 3
+R4
+r1
+!s85 0
+31
+R12
+!s107 D:/TKHDL/Fully_Connected/floatAdd16.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/floatAdd16.v|
+!i113 0
+R6
+R7
+nfloat@add16
+vfloatAdd16_TB
+R10
+!i10b 1
+!s100 [[gRF@AnkE^@K94]OS;=Y2
+Ih^O_XGAa8Kg`W2@fK]3L30
+R1
+R2
+R11
+8D:/TKHDL/Fully_Connected/floatAdd16_TB.v
+FD:/TKHDL/Fully_Connected/floatAdd16_TB.v
+L0 3
+R4
+r1
+!s85 0
+31
+R12
+!s107 D:/TKHDL/Fully_Connected/floatAdd16_TB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/floatAdd16_TB.v|
+!i113 0
+R6
+R7
+nfloat@add16_@t@b
+vfloatAdd_TB
+R10
+!i10b 1
+!s100 j?FjO>;PjAA[kEf407CPE1
+I9iWFo1inT?N[=d_=TjeIU1
+R1
+R2
+R11
+8D:/TKHDL/Fully_Connected/floatAdd_TB.v
+FD:/TKHDL/Fully_Connected/floatAdd_TB.v
+L0 1
+R4
+r1
+!s85 0
+31
+R12
+!s107 D:/TKHDL/Fully_Connected/floatAdd_TB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/floatAdd_TB.v|
+!i113 0
+R6
+R7
+nfloat@add_@t@b
+vfloatMult
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 4O65dH6ARjddB;jIlQD;00
+I51?eIjDMMS@fAV4;P4d6J0
+R2
+R11
+8D:/TKHDL/Fully_Connected/floatMult.v
+FD:/TKHDL/Fully_Connected/floatMult.v
+L0 1
+R4
+R12
+!s107 D:/TKHDL/Fully_Connected/floatMult.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/floatMult.v|
+!i113 0
+R6
+R7
+nfloat@mult
+vfloatMult16
+R10
+!i10b 1
+!s100 F3h=1FDdNe[S=5W00oSVJ3
+I7HVA8V@S7<KAOD3X^JlbX2
+R1
+R2
+R11
+8D:/TKHDL/Fully_Connected/floatMult16.v
+FD:/TKHDL/Fully_Connected/floatMult16.v
+L0 3
+R4
+r1
+!s85 0
+31
+R12
+!s107 D:/TKHDL/Fully_Connected/floatMult16.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/floatMult16.v|
+!i113 0
+R6
+R7
+nfloat@mult16
+vfloatMult16_TB
+!s110 1706345306
+!i10b 1
+!s100 6MkkY]Pd0ZRz0GMeEEGzO2
+I1OnnWiVmGGj3VHB4nYKVY2
+R1
+R2
+R11
+8D:/TKHDL/Fully_Connected/floatMult16_TB.v
+FD:/TKHDL/Fully_Connected/floatMult16_TB.v
+L0 3
+R4
+r1
+!s85 0
+31
+!s108 1706345306.000000
+!s107 D:/TKHDL/Fully_Connected/floatMult16_TB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/floatMult16_TB.v|
+!i113 0
+R6
+R7
+nfloat@mult16_@t@b
+vfloatMult_TB
+R10
+!i10b 1
+!s100 M2RdV7;<E6P?GV;K[3U912
+IcM@n`]@8>6zN]NInJLBfH1
+R1
+R2
+R11
+8D:/TKHDL/Fully_Connected/floatMult_TB.v
+FD:/TKHDL/Fully_Connected/floatMult_TB.v
+L0 1
+R4
+r1
+!s85 0
+31
+R12
+!s107 D:/TKHDL/Fully_Connected/floatMult_TB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/floatMult_TB.v|
+!i113 0
+R6
+R7
+nfloat@mult_@t@b
+vfloatReciprocal
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 PdL9XCH=c1B:SLEBhl71[3
+IzM:_M2AUYQiAcFF85MfbL1
+R2
+R11
+8D:/TKHDL/Fully_Connected/floatReciprocal.v
+FD:/TKHDL/Fully_Connected/floatReciprocal.v
+L0 1
+R4
+Z13 !s108 1706345307.000000
+!s107 D:/TKHDL/Fully_Connected/floatReciprocal.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/floatReciprocal.v|
+!i113 0
+R6
+R7
+nfloat@reciprocal
+vfloatReciprocal_tb
+Z14 !s110 1706345307
+!i10b 1
+!s100 >i5oD6VHQCJ^6<]90fB8f3
+ID[TJmKam5k9NlNl5]NRgQ3
+R1
+R2
+R11
+8D:/TKHDL/Fully_Connected/floatReciprocal_tb.v
+FD:/TKHDL/Fully_Connected/floatReciprocal_tb.v
+L0 2
+R4
+r1
+!s85 0
+31
+R13
+!s107 D:/TKHDL/Fully_Connected/floatReciprocal_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/floatReciprocal_tb.v|
+!i113 0
+R6
+R7
+nfloat@reciprocal_tb
+vHyperBolicTangent
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 [4H20^Jd:K67^E;>a`BL81
+IO55Q3M^G[Y2;S`?8Z0E`T2
+R2
+R3
+8D:/TKHDL/Fully_Connected/HyperBolicTangent.v
+FD:/TKHDL/Fully_Connected/HyperBolicTangent.v
+L0 2
+R4
+R13
+!s107 D:/TKHDL/Fully_Connected/HyperBolicTangent.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/HyperBolicTangent.v|
+!i113 0
+R6
+R7
+n@hyper@bolic@tangent
+vHyperBolicTangent16
+R14
+!i10b 1
+!s100 [RMaNA:>5J^SEa6ePl8M81
+IiU]=Q7E3B6Vl3<SJh0VF:2
+R1
+R2
+R3
+8D:/TKHDL/Fully_Connected/HyperBolicTangent16.v
+FD:/TKHDL/Fully_Connected/HyperBolicTangent16.v
+L0 2
+R4
+r1
+!s85 0
+31
+R13
+!s107 D:/TKHDL/Fully_Connected/HyperBolicTangent16.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/HyperBolicTangent16.v|
+!i113 0
+R6
+R7
+n@hyper@bolic@tangent16
+vHyperBolicTangent16_TB
+R14
+!i10b 1
+!s100 n`U4]Zlhn`2cSCoH>fDEz1
+I<@>18^zO37HLJz?g7Xk>J2
+R1
+R2
+R3
+8D:/TKHDL/Fully_Connected/HyperbolicTangent16_TB.v
+FD:/TKHDL/Fully_Connected/HyperbolicTangent16_TB.v
+L0 1
+R4
+r1
+!s85 0
+31
+R13
+!s107 D:/TKHDL/Fully_Connected/HyperbolicTangent16_TB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/HyperbolicTangent16_TB.v|
+!i113 0
+R6
+R7
+n@hyper@bolic@tangent16_@t@b
+vHyperBolicTangent_TB
+R14
+!i10b 1
+!s100 M[]HR]cz=H0EJ:OU_;2o>1
+I22CS^mcdLIKYoL5XP3z_43
+R1
+R2
+R3
+8D:/TKHDL/Fully_Connected/HyperbolicTangent_TB.v
+FD:/TKHDL/Fully_Connected/HyperbolicTangent_TB.v
+L0 1
+R4
+r1
+!s85 0
+31
+R13
+!s107 D:/TKHDL/Fully_Connected/HyperbolicTangent_TB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/HyperbolicTangent_TB.v|
+!i113 0
+R6
+R7
+n@hyper@bolic@tangent_@t@b
+vIntegrationFC
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 0De__7dO@PaW0?Gm1VWmA0
+IZSU?KnM@4OUOam6]KLn=X0
+R2
+w1705916593
+8D:/TKHDL/Fully_Connected/IntegrationFC.v
+FD:/TKHDL/Fully_Connected/IntegrationFC.v
+L0 1
+R4
+R13
+!s107 D:/TKHDL/Fully_Connected/IntegrationFC.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/IntegrationFC.v|
+!i113 0
+R6
+R7
+n@integration@f@c
+vintegrationFC
+R14
+!i10b 1
+!s100 ;2i8^W?AMgznI>k197Hah2
+IKWH?16Q5j1[=3?i;C<dT72
+R1
+R2
+R3
+8D:/TKHDL/Fully_Connected/IntegrationConvPart.v
+FD:/TKHDL/Fully_Connected/IntegrationConvPart.v
+L0 2
+R4
+r1
+!s85 0
+31
+R13
+!s107 D:/TKHDL/Fully_Connected/IntegrationConvPart.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/IntegrationConvPart.v|
+!i113 0
+R6
+R7
+nintegration@f@c
+vIntegrationFC_tb
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 EIXFd^5kNN^Pk30QHEA912
+IZMCl]K>@VzCc<0zQn;hnL0
+R2
+w1705915789
+8D:/TKHDL/Fully_Connected/IntegrationFC_tb.v
+FD:/TKHDL/Fully_Connected/IntegrationFC_tb.v
+L0 1
+R4
+R13
+!s107 D:/TKHDL/Fully_Connected/IntegrationFC_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/IntegrationFC_tb.v|
+!i113 0
+R6
+R7
+n@integration@f@c_tb
+vlayer
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 ^n`@4XBmcKb;XN7<B1J0_2
+I]_N:;FDP@fSJd9XCKg]Ya2
+R2
+w1705915730
+8D:/TKHDL/Fully_Connected/layer.v
+FD:/TKHDL/Fully_Connected/layer.v
+L0 1
+R4
+R13
+!s107 D:/TKHDL/Fully_Connected/layer.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/layer.v|
+!i113 0
+R6
+R7
+vlayer_TB
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 W4Z2VaPhd<[IIf]Y6ZK^>1
+IQh_POKMnl9;JARWPmlkEa1
+R2
+R11
+8D:/TKHDL/Fully_Connected/layer_TB.v
+FD:/TKHDL/Fully_Connected/layer_TB.v
+L0 1
+R4
+R13
+!s107 D:/TKHDL/Fully_Connected/layer_TB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/layer_TB.v|
+!i113 0
+R6
+R7
+nlayer_@t@b
+vprocessingElement
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 KZ1N4jh21VOmozUXAgbnC3
+I:ZZ8Vm=J?R<2BnW=ICWVX0
+R2
+R11
+8D:/TKHDL/Fully_Connected/processingElement.v
+FD:/TKHDL/Fully_Connected/processingElement.v
+L0 1
+R4
+R13
+!s107 D:/TKHDL/Fully_Connected/processingElement.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/processingElement.v|
+!i113 0
+R6
+R7
+nprocessing@element
+vprocessingElement16
+R14
+!i10b 1
+!s100 F6E]`;S5QN3C9gOczkW`L2
+I<c@IoiNAUk<4`a3GNG5XJ1
+R1
+R2
+R11
+8D:/TKHDL/Fully_Connected/processingElement16.v
+FD:/TKHDL/Fully_Connected/processingElement16.v
+L0 3
+R4
+r1
+!s85 0
+31
+R13
+!s107 D:/TKHDL/Fully_Connected/processingElement16.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/processingElement16.v|
+!i113 0
+R6
+R7
+nprocessing@element16
+vprocessingElement16_TB
+R14
+!i10b 1
+!s100 6<6Lg;GE]lZ6T3zQ^CTmm2
+I7AJh7bi]SK^EBXQHB9ah;2
+R1
+R2
+R11
+8D:/TKHDL/Fully_Connected/processingElement16_TB.v
+FD:/TKHDL/Fully_Connected/processingElement16_TB.v
+L0 3
+R4
+r1
+!s85 0
+31
+R13
+!s107 D:/TKHDL/Fully_Connected/processingElement16_TB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/processingElement16_TB.v|
+!i113 0
+R6
+R7
+nprocessing@element16_@t@b
+vprocessingElement_TB
+R14
+!i10b 1
+!s100 cA7Y37bNYDLRbbT63aBdJ1
+IY?0hEi00c=T:4XnUnh5]d2
+R1
+R2
+R11
+8D:/TKHDL/Fully_Connected/processingElement_TB.v
+FD:/TKHDL/Fully_Connected/processingElement_TB.v
+L0 3
+R4
+r1
+!s85 0
+31
+R13
+!s107 D:/TKHDL/Fully_Connected/processingElement_TB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/processingElement_TB.v|
+!i113 0
+R6
+R7
+nprocessing@element_@t@b
+vRFselector
+R14
+!i10b 1
+!s100 bBH;Wk<80Q0dMHZl8mL8g2
+IfS8jImZOTR^]`^R=>i8;g1
+R1
+R2
+R3
+8D:/TKHDL/Fully_Connected/RFselector.v
+FD:/TKHDL/Fully_Connected/RFselector.v
+L0 3
+R4
+r1
+!s85 0
+31
+R13
+!s107 D:/TKHDL/Fully_Connected/RFselector.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/RFselector.v|
+!i113 0
+R6
+R7
+n@r@fselector
+vsoftmax
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 Y1^^jY`APDhCSOU[XJAIJ1
+I<bzb=ABYEjXA38<?8TTnm1
+R2
+w1705915728
+8D:/TKHDL/Fully_Connected/softmax.v
+FD:/TKHDL/Fully_Connected/softmax.v
+L0 1
+R4
+R5
+!s107 D:/TKHDL/Fully_Connected/softmax.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/softmax.v|
+!i113 0
+R6
+R7
+vsoftmax1
+R0
+!i10b 1
+!s100 PR>;5f6Z=OcGV]RX>P9l;0
+IVoJ0`n;@`ioJ9CG77k:1n3
+R1
+R2
+w1705915817
+8D:/TKHDL/Fully_Connected/softmax_1.v
+FD:/TKHDL/Fully_Connected/softmax_1.v
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/TKHDL/Fully_Connected/softmax_1.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/softmax_1.v|
+!i113 0
+R6
+R7
+vsoftmax2
+R0
+!i10b 1
+!s100 XSMA43`NNNcLJBn1KD<_92
+I=YR<Z_iDoWT[h^<hP^1Fg0
+R1
+R2
+w1705915812
+8D:/TKHDL/Fully_Connected/softmax_2.v
+FD:/TKHDL/Fully_Connected/softmax_2.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/TKHDL/Fully_Connected/softmax_2.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/softmax_2.v|
+!i113 0
+R6
+R7
+vsoftmax_tb
+R0
+!i10b 1
+!s100 f2U]Zid4RoD2e6jRS>PP?2
+I7YaVjQI^BW4o^ko5CmZWN2
+R1
+R2
+R11
+8D:/TKHDL/Fully_Connected/softmax_tb.v
+FD:/TKHDL/Fully_Connected/softmax_tb.v
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/TKHDL/Fully_Connected/softmax_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/softmax_tb.v|
+!i113 0
+R6
+R7
+vUsingTheTanh
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 cLK1JMK9mdZWo`;OLK20]3
+I7YWC8zgYzb6^D;<R<:Bkh3
+R2
+R3
+8D:/TKHDL/Fully_Connected/UsingTheTanh.v
+FD:/TKHDL/Fully_Connected/UsingTheTanh.v
+L0 1
+R4
+R5
+!s107 D:/TKHDL/Fully_Connected/UsingTheTanh.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/UsingTheTanh.v|
+!i113 0
+R6
+R7
+n@using@the@tanh
+vUsingTheTanh16
+R0
+!i10b 1
+!s100 ^Kc6>2Kd0jJ:lOGYR:eI70
+IV7Fznbec2`T1o78^5oalE3
+R1
+R2
+R3
+8D:/TKHDL/Fully_Connected/UsingTheTanh16.v
+FD:/TKHDL/Fully_Connected/UsingTheTanh16.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/TKHDL/Fully_Connected/UsingTheTanh16.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/UsingTheTanh16.v|
+!i113 0
+R6
+R7
+n@using@the@tanh16
+vUsingTheTanh16_TB
+R0
+!i10b 1
+!s100 8<@Z6<Tl]8?6]NfJg6[<[0
+I;_Q3gC?;i^i66K73;K2JD3
+R1
+R2
+R3
+8D:/TKHDL/Fully_Connected/UsingTheTanh16_TB .v
+FD:/TKHDL/Fully_Connected/UsingTheTanh16_TB .v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/TKHDL/Fully_Connected/UsingTheTanh16_TB .v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/UsingTheTanh16_TB .v|
+!i113 0
+R6
+R7
+n@using@the@tanh16_@t@b
+vUsingTheTanh_TB
+R0
+!i10b 1
+!s100 :ALhWe:`j;T3m7ZQPOXGG1
+IaHW_]`E<R:^BQGjfD8h?O1
+R1
+R2
+R3
+8D:/TKHDL/Fully_Connected/UsingTheTanh_TB.v
+FD:/TKHDL/Fully_Connected/UsingTheTanh_TB.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/TKHDL/Fully_Connected/UsingTheTanh_TB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/UsingTheTanh_TB.v|
+!i113 0
+R6
+R7
+n@using@the@tanh_@t@b
+vweightMemory
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 _IePV:ScVNMZcfYTVIZNI1
+IYY8AdiRAA3bHgNhFiCFN^3
+R2
+w1706345250
+8D:/TKHDL/Fully_Connected/weightMemory.v
+FD:/TKHDL/Fully_Connected/weightMemory.v
+L0 1
+R4
+R5
+!s107 D:/TKHDL/Fully_Connected/weightMemory.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/weightMemory.v|
+!i113 0
+R6
+R7
+nweight@memory
+vweightMemroy_TB
+R0
+!i10b 1
+!s100 cnkTBgad1?cmgkHT1Tl2:2
+IYcc@WAQohoGh2?5`^Y0nF2
+R1
+R2
+R11
+8D:/TKHDL/Fully_Connected/weightMemory_TB.v
+FD:/TKHDL/Fully_Connected/weightMemory_TB.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/TKHDL/Fully_Connected/weightMemory_TB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/TKHDL/Fully_Connected/weightMemory_TB.v|
+!i113 0
+R6
+R7
+nweight@memroy_@t@b

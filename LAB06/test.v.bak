@@ -1,0 +1,14 @@
+module test(clk, rst, D);
+input clk, rst;
+output reg [2:0] D;
+
+always @ (posedge clk or negedge rst)
+begin
+ if (!rst)
+ 	D <= 3'd0;
+ if (D == 3'd0)
+ 	D = D + 3'd1;
+ else
+ 	D = D - 3'd1;
+end
+endmodule

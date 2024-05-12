@@ -1,0 +1,64 @@
+`timescale 1ns/1ps
+module Testbench();
+reg [31:0] A, B;
+reg [2:0] sel;
+wire [31:0] Q;
+wire OF;
+
+ALU ALU1(A, B, Q, OF, sel);
+initial begin
+ sel = 0;
+ A = 2;
+ B = 3;
+ #10
+ sel = 1;
+ A = 4;
+ B = 5;
+ #10
+ sel = 2;
+ A = 6;
+ B = 7;
+ #10
+ sel = 3;
+ A = 8;
+ B = 9;
+ #10
+ sel = 4;
+ A = 10;
+ B = 11;
+ #10
+ sel = 5;
+ A = 7;
+ B = 1;
+ #10
+ sel = 6;
+ A = 2;
+ B = 3;
+ #10
+ sel = 7;
+ A = 1;
+ B = 1;
+ #10;
+end
+endmodule
+/*
+reg [2:0] sel;
+wire [31:0] Q;
+wire OF;
+
+MUX21 mux(A, B, Q, sel);
+initial begin
+ sel = 0;
+ A = 2;
+ B = 3;
+ #10
+ sel = 1;
+ A = 4;
+ B = 5;
+ #10
+ sel = 0;
+ A = 6;
+ B = 5;
+end*/
+
+

@@ -1,0 +1,36 @@
+D:/TKHDL/COMPONENT/t_ff.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/COMPONENT/t_ff.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module t_ff
+
+Top level modules:
+	t_ff
+
+} {} {}} D:/TKHDL/COMPONENT/register4bits.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/COMPONENT/register4bits.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module register4bits
+
+Top level modules:
+	register4bits
+
+} {} {}} D:/TKHDL/COMPONENT/edge_dff.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/COMPONENT/edge_dff.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module edge_dff
+
+Top level modules:
+	edge_dff
+
+} {} {}} D:/TKHDL/COMPONENT/counter.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/COMPONENT/counter.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module counter
+
+Top level modules:
+	counter
+
+} {} {}} D:/TKHDL/COMPONENT/fulladd.v {1 {vlog -work work -vopt -stats=none D:/TKHDL/COMPONENT/fulladd.v
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module fulladd
+
+Top level modules:
+	fulladd
+
+} {} {}}

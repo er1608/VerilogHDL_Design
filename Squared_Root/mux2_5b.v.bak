@@ -1,0 +1,6 @@
+module mux2_5b(out, InA, InB, Sel);
+	output [4:0] out;
+	input [4:0] InA, InB;
+	input Sel;
+	mux2_1b(out[4:0], InA[4:0], InB[4:0], Sel);
+endmodule

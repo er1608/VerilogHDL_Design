@@ -1,0 +1,25 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\TKHDL\LAB06\simulation\modelsim
+vtest
+!i10b 1
+!s100 KE:hFoTOYVUHP?]`iTE;T2
+I<Pkk86U8PQNb=;GL^L6?b2
+VgNd22;L=2D[HXA04ac:mZ1
+Z1 dD:\TKHDL\LAB06\simulation\modelsim
+w1704624399
+8D:/TKHDL/LAB06/test.v
+FD:/TKHDL/LAB06/test.v
+L0 1
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1704624697.433000
+!s107 D:/TKHDL/LAB06/test.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/TKHDL/LAB06|D:/TKHDL/LAB06/test.v|
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+D:/TKHDL/LAB06 -O0

@@ -1,0 +1,211 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\TKHDL\FIFO\simulation\modelsim
+vCMP
+IOVmV1IIgXVMRda8z=@TU]3
+VM`U;1MoGVL<8UBEGGUIg;2
+Z1 dD:\TKHDL\FIFO\simulation\modelsim
+w1697969025
+8D:/TKHDL/FIFO/CMP.v
+FD:/TKHDL/FIFO/CMP.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+D:/TKHDL/FIFO -O0
+n@c@m@p
+!i10b 1
+!s100 RTe:]WLRgH[I4?5Yg2lYz3
+!s85 0
+!s108 1700017898.695000
+!s107 D:/TKHDL/FIFO/CMP.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/TKHDL/FIFO|D:/TKHDL/FIFO/CMP.v|
+!s101 -O0
+vcounter
+I?gWhWZ65FZ=BV?<_:jR4J2
+VWDHcESo>`KK9Eo47C2YJ]1
+R1
+Z5 w1698309539
+Z6 8D:/TKHDL/FIFO/counter.v
+Z7 FD:/TKHDL/FIFO/counter.v
+L0 9
+R2
+r1
+31
+Z8 !s108 1700017898.253000
+Z9 !s107 D:/TKHDL/FIFO/counter.v|
+Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/TKHDL/FIFO|D:/TKHDL/FIFO/counter.v|
+R3
+R4
+!i10b 1
+!s100 ?aWZ8cffV1iTY1QPZiFeZ2
+!s85 0
+!s101 -O0
+vdecode2_4
+IBYOfZ3`KJWcz5aHXzL8mY2
+VjW`c1IA^@B216G?lGO:T^0
+R1
+Z11 w1698309588
+Z12 8D:/TKHDL/FIFO/RAM.v
+Z13 FD:/TKHDL/FIFO/RAM.v
+L0 1
+R2
+r1
+31
+Z14 !s108 1700017898.363000
+Z15 !s107 D:/TKHDL/FIFO/RAM.v|
+Z16 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/TKHDL/FIFO|D:/TKHDL/FIFO/RAM.v|
+R3
+R4
+!i10b 1
+!s100 e5]k]mX65a_AfJ:T=lji11
+!s85 0
+!s101 -O0
+vedge_dff
+IWOl7]a8S?3hj?ORfU?6h]2
+Vme3UdAQIJ2Jz6cGUC9Z_N3
+R1
+w1698309637
+8D:/TKHDL/FIFO/edge_dff.v
+FD:/TKHDL/FIFO/edge_dff.v
+L0 3
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 W<W6LiSD;DhA5Jz0f:=;h3
+!s85 0
+!s108 1700017898.468000
+!s107 D:/TKHDL/FIFO/edge_dff.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/TKHDL/FIFO|D:/TKHDL/FIFO/edge_dff.v|
+!s101 -O0
+vFIFO
+IJg2XO`:X[LYR286SPW3JI0
+VL_0mG<6A@@ZV_OElng3D[3
+R1
+w1698309611
+8D:/TKHDL/FIFO/FIFO.v
+FD:/TKHDL/FIFO/FIFO.v
+L0 1
+R2
+r1
+31
+R3
+n@f@i@f@o
+R4
+!i10b 1
+!s100 <8Y`R5d<@;Z7dbg8nnJlS3
+!s85 0
+!s108 1700017898.058000
+!s107 D:/TKHDL/FIFO/FIFO.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/TKHDL/FIFO|D:/TKHDL/FIFO/FIFO.v|
+!s101 -O0
+vHA
+I[A[QP`YSE2X9>8jbfhVP60
+Vo^o9L?9]<e7WY2i[aAiD=3
+R1
+R5
+R6
+R7
+L0 1
+R2
+r1
+31
+R8
+R9
+R10
+R3
+R4
+n@h@a
+!i10b 1
+!s100 K]SlQT:h16K2a?on2b5^T0
+!s85 0
+!s101 -O0
+vMC
+Iz:a72Qe[NfjBWkQgGB>VG3
+VkF^QAJHENlCiMnRNcih?F3
+R1
+w1698309569
+8D:/TKHDL/FIFO/MC.v
+FD:/TKHDL/FIFO/MC.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@m@c
+!i10b 1
+!s100 ziV3;lzT:GQ0JeT[hNYob0
+!s85 0
+!s108 1700017898.148000
+!s107 D:/TKHDL/FIFO/MC.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/TKHDL/FIFO|D:/TKHDL/FIFO/MC.v|
+!s101 -O0
+vmux2_to_1
+IO=ZSeTV[8WDXA0akK7Hih1
+VoWB78QZBUDReD`]8N9keA2
+R1
+w1698220355
+8D:/TKHDL/FIFO/mux2_to_1.v
+FD:/TKHDL/FIFO/mux2_to_1.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 XMOVUJlR74;I4zTzEK[KY2
+!s85 0
+!s108 1700017898.569000
+!s107 D:/TKHDL/FIFO/mux2_to_1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/TKHDL/FIFO|D:/TKHDL/FIFO/mux2_to_1.v|
+!s101 -O0
+vRAM
+ILcO6E?9=k@W@9]`eGk`Xn2
+Vfaa>84=Zfh=nX4U0YNJEW3
+R1
+R11
+R12
+R13
+L0 15
+R2
+r1
+31
+R14
+R15
+R16
+R3
+R4
+n@r@a@m
+!i10b 1
+!s100 Q9jeheD;_HJ=gAbLRV^2i1
+!s85 0
+!s101 -O0
+vTestbench
+!i10b 1
+!s100 h>MG0k`d?_m86lZiGCCk@2
+I6JfIg8XZYQffOd>n;Oe1I3
+V0M;QF8^7D5jBV?i8fS;Q30
+R1
+w1698314221
+8D:/TKHDL/FIFO/Testbench.v
+FD:/TKHDL/FIFO/Testbench.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1700017898.798000
+!s107 D:/TKHDL/FIFO/Testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/TKHDL/FIFO|D:/TKHDL/FIFO/Testbench.v|
+!s101 -O0
+R3
+R4
+n@testbench

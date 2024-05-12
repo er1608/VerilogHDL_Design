@@ -1,0 +1,75 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do LAB05_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/LAB05 {D:/TKHDL/LAB05/SRAM.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SRAM
+# 
+# Top level modules:
+# 	SRAM
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/LAB05 {D:/TKHDL/LAB05/register.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module register
+# 
+# Top level modules:
+# 	register
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/LAB05 {D:/TKHDL/LAB05/MUX21.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module MUX21
+# 
+# Top level modules:
+# 	MUX21
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/LAB05 {D:/TKHDL/LAB05/ALU.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/LAB05 {D:/TKHDL/LAB05/DATAPATH.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DATAPATH
+# 
+# Top level modules:
+# 	DATAPATH
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/LAB05 {D:/TKHDL/LAB05/SignExtend.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SignExtend
+# 
+# Top level modules:
+# 	SignExtend
+# 
+# vlog -vlog01compat -work work +incdir+D:/TKHDL/LAB05 {D:/TKHDL/LAB05/Testbench.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Testbench
+# 
+# Top level modules:
+# 	Testbench
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  Testbench
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps Testbench 
+# Loading work.Testbench
+# Loading work.DATAPATH
+# Loading work.SignExtend
+# Loading work.register
+# Loading work.MUX21
+# Loading work.ALU
+# Loading work.SRAM
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break in Module Testbench at D:/TKHDL/LAB05/Testbench.v line 46
+# Simulation Breakpoint: Break in Module Testbench at D:/TKHDL/LAB05/Testbench.v line 46
+# MACRO ./LAB05_run_msim_rtl_verilog.do PAUSED at line 22

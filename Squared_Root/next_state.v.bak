@@ -1,0 +1,57 @@
+
+
+module next_state(out, start, S);
+	output [3:0] out;
+	input [3:0] S;
+	input start;
+	wire nstart;
+	not (nstart, start);
+	wire Q0, Q1, Q2, Q3;
+	or or0(Q0, S[0], 1'b0);
+	or or1(Q1, S[1], 1'b0);
+	or or2(Q2, S[2], 1'b0);
+	or or3(Q3, S[3], 1'b0);
+	wire wa1, wa2, wa3, wa4, wa5, wa6, wa7;
+	and a1(wa1, Q3, ~Q2, Q1);
+	and a2(wa2, ~Q3, Q2, Q1);
+	and a3(wa3, Q3, ~Q2, Q0);
+	and a4(wa4, Q3, ~Q2, Q1);
+	and a5(wa5, ~Q3, Q2, Q1);
+	and a6(wa6, Q3, ~Q2, Q0);
+	and a7(wa7, ~Q3, ~Q2, ~Q1, ~Q0);
+	
+	wire wo4, wo5, wa8, wa9, wo6, wo7;
+	or o4(wo4, wa1, wa2, wa3);
+	or o5(wo5, wa4, wa5, wa6, wa7);
+	and a8(wa8, nstart, wo4);
+	and a9(wa9, start, wo5);
+	or o7(out[0], wa8, wa9);
+	
+	wire wa10, wa11, wa12, wa13, wa14, wa15, wa16;
+	and a10(wa10, Q3, Q1);
+	and a11(wa11, Q2, Q1, Q0);
+	and a12(wa12, Q3, ~Q2, Q0);
+	and a13(wa13, ~Q3, Q2, Q1);
+	and a14(wa14, Q2, Q1, Q0);
+	and a15(wa15, ~Q3, ~Q2, Q1, ~Q0);
+	and a16(wa16, Q3, ~Q2, ~Q1, Q0);
+	
+	wire wo8,wo9;
+	or o8(out[3], wa10, wa11, wa12);
+	or o9(out[2], wa13, wa14, wa15, wa16);
+	
+	wire wa17,wa18, wa19, wa20, wa21, wa22, wa23;
+	and a17(wa17, Q3, Q2, Q1);
+	and a18(wa18, Q2, Q1, Q0);
+	and a19(wa19, ~Q3, Q2, Q1);
+	and a20(wa20, ~Q3, ~Q2, ~Q1, Q0);
+	and a21(wa21, ~Q3, ~Q2, Q1, ~Q0);
+	and a22(wa22, Q3, ~Q2, Q1, ~Q0);
+	and a23(wa23, ~Q3, ~Q2, ~Q1, Q0);
+	
+	or(out[1], wa17,wa18, wa19, wa20, wa21,wa22, wa23);
+endmodule
+	
+	
+	
+	

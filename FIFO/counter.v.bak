@@ -1,0 +1,36 @@
+module edge_dff(q, qbar, d, clk, clear);
+output q,qbar;
+input d, clk, clear;
+wire s, sbar, r, rbar,cbar;
+not (cbar, clear);
+not (clkbar, clk);
+// Input latches
+nand (sbar, rbar, s);
+nand (s, sbar, cbar, clkbar);
+nand (r, rbar, clkbar, s);
+nand (rbar, r, cbar, d);
+// Output latch
+nand (q, s, qbar);
+nand (qbar, q, r, cbar);
+endmodule
+
+module t_ff(q, clk, clear);
+output q;
+input clk, clear;
+// Instantiate the edge triggered DFF
+// Complement of output q is fed back.
+// Notice qbar not needed. Empty port.
+edge_dff ff1(q, ,~q, clk, clear);
+endmodule
+
+module counter();
+output [3:0] Q;
+reg clock, clear;
+
+always #10 clock = ~clock;
+// Instantiate the T flipflops
+t_ff tff0(Q[0], clock, clear);
+t_ff tff1(Q[1], Q[0], clear);
+t_ff tff2(Q[2], Q[1], clear);
+t_ff tff3(Q[3], Q[2], clear);
+endmodule

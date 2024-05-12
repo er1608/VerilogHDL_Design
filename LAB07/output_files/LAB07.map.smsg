@@ -1,0 +1,4 @@
+Warning (10273): Verilog HDL warning at SRAM.v(18): extended using "x" or "z"
+Warning (10273): Verilog HDL warning at SRAM.v(23): extended using "x" or "z"
+Warning (10273): Verilog HDL warning at register.v(8): extended using "x" or "z"
+Warning (10273): Verilog HDL warning at register.v(9): extended using "x" or "z"

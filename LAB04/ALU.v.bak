@@ -1,0 +1,32 @@
+module ALU(A, B, Q, OF, sel);
+input [31:0] A, B;
+output [31:0] Q;
+input [2:0] sel;
+output OF;
+always @ (*)
+ case (sel)
+	3'b000: Q = ~A;
+	3'b001: Q = A and B; 
+	3'b010: Q = A xor B;
+	3'b011: Q = A or B;
+	3'b100:
+	begin
+	 Q = A - 3'b001;
+	 if ((A[31] ~= Q[31]) OF = 1;
+	end
+	3'b101:
+	begin
+	 Q = A + B;
+	 if ((A[31] and B[31]) ~= Q[31]) OF = 1;
+	end
+	3'b110:
+	begin
+	 Q = A - B;
+	 if ((A[31] and B[31]) ~= Q[31]) OF = 1;
+	end
+	3'b111:
+	begin
+	 Q = A + 3'b001;
+	 if ((A[31] and B[31]) ~= Q[31]) OF = 1;
+	end
+endmodule

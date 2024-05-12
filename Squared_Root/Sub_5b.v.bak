@@ -1,0 +1,11 @@
+
+module Sub_5b(out, InA, InB);
+	output [4:0] out;
+	input [4:0] InA, InB;
+	wire Bout4, Bout3, Bout2, Bout1;
+	Full_Sub fs4(out[4],Bout4, InA[4], InB[4], 1'b0);
+	Full_Sub fs3(out[3],Bout3, InA[3], InB[3], Bout4);
+	Full_Sub fs2(out[2],Bout2, InA[2], InB[2], Bout3);
+	Full_Sub fs1(out[1],Bout1, InA[1], InB[1], Bout2);
+	Full_Sub fs0(out[0], , InA[0], InB[0], Bout1);
+endmodule

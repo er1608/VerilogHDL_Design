@@ -1,0 +1,34 @@
+module CMP(I1, I2, out)
+input [3:0] I1, I2;
+output out;
+wire [3:0] nI1, nI2, f; 
+wire [1:0] y1, y2; 
+
+not(nI1[0], I1[0]);
+not(nI1[1], I1[1]);
+not(nI1[2], I1[2]);
+not(nI1[3], I1[3]);
+
+not(nI2[0], I2[0]);
+not(nI2[1], I2[1]);
+not(nI2[2], I2[2]);
+not(nI2[3], I2[3]);
+
+and(y1[0], I1[0], I2[0]);
+and(y2[0], nI1[0], nI2[0]);
+or (f[0], y1[0], y2[0]);
+
+and(y1[1], I1[1], I2[1]);
+and(y2[1], nI1[1], nI2[1]);
+or (f[1], y1[1], y2[1]);
+
+and(y1[2], I1[2], I2[2]);
+and(y2[2], nI1[2], nI2[2]);
+or (f[2], y1[2], y2[2]);
+
+and(y1[3], I1[3], I2[3]);
+and(y2[3], nI1[3], nI2[3]);
+or (f[3], y1[3], y2[3]);
+
+and(out, f[0], f[1], f[2], f[3])
+endmodule

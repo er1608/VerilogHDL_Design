@@ -1,0 +1,193 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\TKHDL\LAB07\simulation\modelsim
+vALU
+IUgE7HKMeF;VT34`3=zX6Y2
+V8]QK1m;QOfKfe_JWJ_7P43
+Z1 dD:\TKHDL\LAB07\simulation\modelsim
+w1702051651
+8D:/TKHDL/LAB07/ALU.v
+FD:/TKHDL/LAB07/ALU.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+D:/TKHDL/LAB07 -O0
+n@a@l@u
+!i10b 1
+!s100 @j>CTTaSNnJEJ7GSN]mL02
+!s85 0
+!s108 1703507468.438000
+!s107 D:/TKHDL/LAB07/ALU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/TKHDL/LAB07|D:/TKHDL/LAB07/ALU.v|
+!s101 -O0
+vALUcontrol
+I?6<;K1jHca2aJc4hZTQo01
+V4K6U>D7P^32n6BV5FL;QX1
+R1
+w1702539879
+8D:/TKHDL/LAB07/ALUcontrol.v
+FD:/TKHDL/LAB07/ALUcontrol.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@a@l@ucontrol
+!i10b 1
+!s100 PGfWUz]`l5>a<@C5C^ALR3
+!s85 0
+!s108 1703507468.281000
+!s107 D:/TKHDL/LAB07/ALUcontrol.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/TKHDL/LAB07|D:/TKHDL/LAB07/ALUcontrol.v|
+!s101 -O0
+vControl
+IT9oC;G:Na]PzYkI:>f4RG3
+V1lhTJUcMGMed1?l?J;62M3
+R1
+w1702539393
+8D:/TKHDL/LAB07/Control.v
+FD:/TKHDL/LAB07/Control.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@control
+!i10b 1
+!s100 RIh<FU6NKCo5f9dDDaFOz3
+!s85 0
+!s108 1703507468.164000
+!s107 D:/TKHDL/LAB07/Control.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/TKHDL/LAB07|D:/TKHDL/LAB07/Control.v|
+!s101 -O0
+vDATAPATH
+Ib2@c4bz_[786AP5mH8MIe1
+Vm;_giUeM?>3d6RALPECgZ0
+R1
+w1703495220
+8D:/TKHDL/LAB07/DATAPATH.v
+FD:/TKHDL/LAB07/DATAPATH.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@d@a@t@a@p@a@t@h
+!i10b 1
+!s100 3hA5<LcTRT=m07hcFEEUX2
+!s85 0
+!s108 1703507468.046000
+!s107 D:/TKHDL/LAB07/DATAPATH.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/TKHDL/LAB07|D:/TKHDL/LAB07/DATAPATH.v|
+!s101 -O0
+vMUX21
+IS^jmiPg?ZW`BWi4Ch2M^K1
+VCoLQl6:WU>hnJ999iY`mj2
+R1
+w1701331149
+8D:/TKHDL/LAB07/MUX21.v
+FD:/TKHDL/LAB07/MUX21.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@m@u@x21
+!i10b 1
+!s100 V`zK[LdDf:`Ro@d@<9J0>3
+!s85 0
+!s108 1703507467.906000
+!s107 D:/TKHDL/LAB07/MUX21.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/TKHDL/LAB07|D:/TKHDL/LAB07/MUX21.v|
+!s101 -O0
+vregister
+IKfScQhS>Rgd^N>OZ5iVd`0
+VFSR8b:?PfOk]Bh6Y5CjE81
+R1
+w1703507327
+8D:/TKHDL/LAB07/register.v
+FD:/TKHDL/LAB07/register.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 80Y9[X_H>oT0d@1J=8oIj0
+!s85 0
+!s108 1703507467.788000
+!s107 D:/TKHDL/LAB07/register.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/TKHDL/LAB07|D:/TKHDL/LAB07/register.v|
+!s101 -O0
+vSignExtend
+IEJPzW7fKW6U?e[oCNiL`b3
+Vn>fGjkh_^4F@fe8eM8E4K2
+R1
+w1701336387
+8D:/TKHDL/LAB07/SignExtend.v
+FD:/TKHDL/LAB07/SignExtend.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@sign@extend
+!i10b 1
+!s100 zOPfFB^mobRVk00MPBmo[3
+!s85 0
+!s108 1703507467.672000
+!s107 D:/TKHDL/LAB07/SignExtend.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/TKHDL/LAB07|D:/TKHDL/LAB07/SignExtend.v|
+!s101 -O0
+vSRAM
+Ik1zMk2n7F9E^_joTUWn3Y0
+VNENjAekUW5zOlj8Gb`@;j0
+R1
+w1703504394
+8D:/TKHDL/LAB07/SRAM.v
+FD:/TKHDL/LAB07/SRAM.v
+L0 1
+R2
+r1
+31
+R3
+n@s@r@a@m
+R4
+!i10b 1
+!s100 5e_e1AXZgM3=Xc:jcdlJ^2
+!s85 0
+!s108 1703507467.546000
+!s107 D:/TKHDL/LAB07/SRAM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/TKHDL/LAB07|D:/TKHDL/LAB07/SRAM.v|
+!s101 -O0
+vTestbench
+!i10b 1
+!s100 RL8dVZG=K_:JdfiEdneP>3
+I@zA>3_[EQ02UnLDf8K3i93
+VGdUiEZgaMiVEi@bgHJeE13
+R1
+w1703507343
+8D:/TKHDL/LAB07/Testbench.v
+FD:/TKHDL/LAB07/Testbench.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1703507468.564000
+!s107 D:/TKHDL/LAB07/Testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/TKHDL/LAB07|D:/TKHDL/LAB07/Testbench.v|
+!s101 -O0
+R3
+R4
+n@testbench

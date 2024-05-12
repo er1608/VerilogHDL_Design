@@ -1,0 +1,15 @@
+|Chap1Counter
+Clk => Count[0]~reg0.CLK
+Clk => Count[1]~reg0.CLK
+Clk => Count[2]~reg0.CLK
+Clk => Count[3]~reg0.CLK
+Reset => Count~0.OUTPUTSELECT
+Reset => Count~1.OUTPUTSELECT
+Reset => Count~2.OUTPUTSELECT
+Reset => Count~3.OUTPUTSELECT
+Count[0] <= Count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Count[1] <= Count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Count[2] <= Count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Count[3] <= Count[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

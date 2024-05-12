@@ -1,0 +1,161 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\TKHDL\LAB06\simulation\qsim
+vControl
+Z1 !s100 9P3CI?No1;@]PTfXeNj4Z1
+Z2 I@8`ciX3f7dD[gD3?M;oGz3
+Z3 V1lhTJUcMGMed1?l?J;62M3
+Z4 dD:\TKHDL\LAB06\simulation\qsim
+Z5 w1703480100
+Z6 8LAB06.vo
+Z7 FLAB06.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|LAB06.vo|
+Z10 o-work work -O0
+Z11 n@control
+Z12 !s108 1703480100.833000
+Z13 !s107 LAB06.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vControl_vlg_check_tst
+Z14 !s100 VHXHB<m7djeBKN;h7BITP1
+Z15 IjAoOWGVATeM`hz9coA=9l2
+Z16 VH3RRhdc0_3mKbNKWJ?F<Y1
+R4
+Z17 w1703480098
+Z18 8LAB06.vt
+Z19 FLAB06.vt
+L0 57
+R8
+r1
+31
+Z20 !s108 1703480100.944000
+Z21 !s107 LAB06.vt|
+Z22 !s90 -work|work|LAB06.vt|
+R10
+Z23 n@control_vlg_check_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vControl_vlg_sample_tst
+Z24 !s100 T6o1[1l@3W:gcmb]FnbX71
+Z25 Ihkmh]BNZV04A2Re0_3Uzz3
+Z26 VmfEh25z0JVb@O``h7>AeX0
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+31
+R20
+R21
+R22
+R10
+Z27 n@control_vlg_sample_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vControl_vlg_vec_tst
+Z28 !s100 2jQ^=_e67N@5Yj@MoQ_X]2
+Z29 IQj@d;j7IR2EV@d6@d0g3@3
+Z30 V4N;fWP720PNj9SGJY70bm3
+R4
+R17
+R18
+R19
+Z31 L0 331
+R8
+r1
+31
+R20
+R21
+R22
+R10
+Z32 n@control_vlg_vec_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vtest
+Z33 InHRh5CYSbJ<MSLgabB@B`1
+Z34 V7fcAbY<bfFG5Dz2bIOc3V1
+R4
+Z35 w1704638924
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+!i10b 1
+Z36 !s100 aD@:^klX8?;6OXU]HK<981
+!s85 0
+Z37 !s108 1704638925.017000
+R13
+!s101 -O0
+vtest_vlg_check_tst
+!i10b 1
+!s100 Kb>6fF0cH6i2B4dLDWGFF1
+IYY_SMHQz:nk2`RzG[mE312
+V8U_LYkF]7o9LkGnWemQHk0
+R4
+Z38 w1704638922
+R18
+R19
+L0 61
+R8
+r1
+!s85 0
+31
+Z39 !s108 1704638925.084000
+Z40 !s107 LAB06.vt|
+R22
+!s101 -O0
+R10
+vtest_vlg_sample_tst
+!i10b 1
+!s100 i548AZSjGehH5`f8BR?Bz1
+ICZJJcPz>B>TZ]>CeI2WcT0
+Ve6JU7dK0V]DnQ=`ONY``Z3
+R4
+R38
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R39
+R40
+R22
+!s101 -O0
+R10
+vtest_vlg_vec_tst
+!i10b 1
+!s100 Y?jWnVTQY1TmA@oREK:@O3
+IHoNJiVAfz9G9e9MXIb9ko3
+Va5b;6:2=HDheAU5FQATGI3
+R4
+R38
+R18
+R19
+L0 236
+R8
+r1
+!s85 0
+31
+R39
+R40
+R22
+!s101 -O0
+R10

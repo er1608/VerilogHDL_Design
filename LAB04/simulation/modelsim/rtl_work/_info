@@ -1,0 +1,47 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\TKHDL\LAB04\simulation\modelsim
+vALU
+I6YH=iHAI5?f7ATGkR0Vo00
+V8]QK1m;QOfKfe_JWJ_7P43
+Z1 dD:\TKHDL\LAB04\simulation\modelsim
+w1702051490
+8D:/TKHDL/LAB04/ALU.v
+FD:/TKHDL/LAB04/ALU.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+n@a@l@u
+!i10b 1
+!s100 ilDmK8aH6?QhRZCg@7=mA1
+!s85 0
+!s108 1702477535.094000
+!s107 D:/TKHDL/LAB04/ALU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/TKHDL/LAB04|D:/TKHDL/LAB04/ALU.v|
+!s101 -O0
+Z4 !s92 -vlog01compat -work work +incdir+D:/TKHDL/LAB04 -O0
+vTestbench
+!i10b 1
+!s100 nKRbkL6NeR<1FC?]blPX<3
+IW79WZj]G3B1T6DUh8;<@]0
+VGdUiEZgaMiVEi@bgHJeE13
+R1
+w1701877844
+8D:/TKHDL/LAB04/Testbench.v
+FD:/TKHDL/LAB04/Testbench.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1702477535.166000
+!s107 D:/TKHDL/LAB04/Testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/TKHDL/LAB04|D:/TKHDL/LAB04/Testbench.v|
+!s101 -O0
+R3
+R4
+n@testbench
